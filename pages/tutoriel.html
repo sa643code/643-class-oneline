@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/ressources/logo-1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/75303112de.js"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <title>Rédaction Tutoriels</title>
+    <link rel="stylesheet" href="/css/type.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="logo">
+          <li>
+            <a href="/index.html"
+              ><img src="/ressources/logo-1.png" width="50" alt=""
+            /></a>
+          </li>
+        </ul>
+        <ul class="logo">
+          <li><a href="#chap0">Avant Propos</a></li>
+        </ul>
+        <ul>
+          <li class="title-item"><a href="#chap">Chapitre 1</a></li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#un">1 Introduction</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#deux">2 Principes généraux</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#trois">2.1 Différer</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#quatre">2.2 Exemples concrets</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#cinq">2.3 Répétition</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#six">3 Affinements successifs</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#sept">3.1 Association libre</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#huit">3.2 Contenu rejeté</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#neuf">3.3 Exposition principale</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#dix">3.4 Polissage</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#onze">3.5 Expédition</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#douze">4 astuces du métier</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#treize">4.1 Flotteurs</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#quatorze">4.2 Style d'écriture</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#quinze">4.3 Navigation et édition de texte</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-chevron-right"></i
+            ><a href="#seize">5 Conclusion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- A propos -->
+      <section class="main">
+        <div class="container-video">
+          <h1>Rédaction Tutoriels</h1>
+          <video src="/ressources/video.mp4" class="video"></video>
+
+          <div class="controls">
+            <div class="barre-orange">
+              <div class="juice"></div>
+            </div>
+
+            <div class="buttons">
+              <button id="play-pause">
+                <img src="/ressources/play.svg" />
+              </button>
+              <button id="mute">Mute</button>
+              <input
+                type="range"
+                id="volume-slider"
+                min="0"
+                max="100"
+                value="50"
+                step="1" />
+              <button id="fullscreen">
+                <img src="/ressources/fullscreen.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="contenu">
+          <div class="intro">
+            <h2 id="chap0">QUI SUIS-JE ?</h2>
+
+            <p class="lamda">
+              ABDOULAYE DIALLO est un développeur de logiciels passionné par
+              l'enseignement. <br />
+              Fondateur de 643-code et bien d'autres start-ups, je travaille sur
+              des projets personnels et en tant que freelance.<br />
+
+              ABDOULAYE DIALLO enseigne la programmation et le marketing à de
+              nombreux étudiants en ligne et hors ligne en tant que formateur.
+              <br />
+
+              ABDOULAYE DIALLO maîtrise l'art d'expliquer des sujets très
+              complexes de la manière la plus simple possible, facile à
+              comprendre et à suivre. Mes cours vidéos peuvent également
+              utilisés par des entreprises pour former leurs employés et par des
+              universités pour préparer leurs étudiants et améliorer leurs
+              compétences en fonction des exigences du secteur.
+            </p>
+            <h2 id="un">1 Introduction</h2>
+            <p class="lamda">
+              L'objectif de 643-code Tutorial Writing pour se perfectionner est
+              de codifier le processus que j'ai utilisé pour écrire des livres
+              et des articles pédagogiques tels que le ruby Tutorial , The Tau
+              Manifesto et les tutoriels 643-code .Bien qu'il y ait sans aucun
+              doute des aspects de ce processus qui « ne peuvent pas être mis en
+              bouteille », j'espère que ce méta-tutoriel aidera d'autres
+              personnes à produire leurs propres tutoriels instructifs.La
+              présentation s'adresse particulièrement aux auteurs utilisant le
+              système Softcover pour rédiger leurs tutoriels (et encore plus
+              particulièrement aux auteurs collaborant directement avec moi),
+              mais les principes généraux devraient être applicables à une
+              grande variété de contextes.
+            </p>
+            <p class="lamda">
+              Lorsque nous discutons des détails des techniques de rédaction de
+              tutoriels, il est utile de garder à l’esprit l’objectif principal
+              : garder à l’esprit, pour ainsi dire, la forêt, même lorsque nous
+              considérons les arbres.De nombreux créateurs de tutoriels novices
+              (et même expérimentés) privilégient la clarté par rapport à
+              d'autres objectifs, estimant que ce qui distingue les bons
+              tutoriels des mauvais est la clarté du langage.Une manifestation
+              de cette approche est la pratique courante dans les présentations
+              vidéo pédagogiques consistant à parler artificiellement lentement
+              et clairement, ce qui, dans la plupart des cas, vide simplement la
+              présentation de toute spontanéité et de toute passion.Même le
+              tutoriel le plus clairement exprimé peut encore ennuyer le public
+              jusqu'aux larmes.
+            </p>
+            <p class="lamda">
+              Certes, la clarté est une vertu, mais l’élément le plus essentiel
+              est l’histoire .Les êtres humains apprennent et retiennent des
+              informations à travers des histoires depuis des milliers, voire
+              des millions d’années ( Figure 1 ) .Dans notre cas particulier,
+              l’histoire prend la forme d’un récit technique de longue durée
+              .(Ici, le format long fait référence à toute longueur supérieure à
+              celle d'un article de blog court typique.Par exemple, le Manifeste
+              Tau , bien que plus court qu’un livre, reste un PDF de 50
+              pages.)L’avantage du récit est qu’en plus de la clarté, il possède
+              une motivation et une structure .Lorsqu'ils sont bien réalisés,
+              ils rendent le tutoriel plus attrayant, ce qui permet au lecteur 2
+              d'y prêter plus facilement attention.Le tutoriel le plus clair du
+              monde ne sert à rien si le lecteur cesse d’y prêter attention et
+              perd tout intérêt.
+            </p>
+
+            <p class="cycle spec"><img src="/ressources/tut1.jpg" alt="" /></p>
+            <p class="fig">
+              Figure 1 : Les humains apprennent depuis longtemps à partir
+              d’histoires .
+            </p>
+
+            <p class="lamda">
+              Dans le contexte de la rédaction technique, avoir une « histoire »
+              ne signifie pas intégrer le tutoriel dans un récit fictif ; avec
+              un sujet technique, cette approche est presque impossible à
+              réaliser.Cela signifie que l’exposition doit être globalement
+              structurée comme un arc narratif contenant un objectif principal
+              qui, une fois atteint, sert de point culminant de l’histoire.La
+              forme spécifique varie — « écrire un mini clone de Twitter » dans
+              le didacticiel ruby , « comprendre pourquoi π est faux » dans le
+              Manifeste Tau , etc. — mais le principe de base de l'arc narratif
+              est le même.En effet, cette structure narrative s’applique
+              également à des échelles plus petites, avec des arcs narratifs
+              petits et grands correspondant à des objectifs à court et à long
+              terme qui maintiennent le matériel constamment attrayant et
+              pertinent.
+            </p>
+            <p class="lamda">
+              Tout au long du reste de ce méta-tutoriel, nous discuterons
+              d’abord de certains principes généraux à prendre en compte lors de
+              la production de tutoriels techniques ( Section 2 ).Nous
+              discuterons ensuite du processus de fabrication de ces choses (
+              Section 3 ).Enfin, dans la section 4 , nous parlerons de quelques
+              astuces diverses du métier (comme la figure 2 ) 4 pour rendre le
+              didacticiel plus soigné, plus facile à comprendre et plus amusant.
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut2.jpg" alt="" /></p>
+            <p class="fig">
+              Figure 2 : Ce bébé fourmilier endormi est adorable et aide à
+              retenir l'attention du lecteur.
+            </p>
+            <h2 id="deux">2 Principes généraux</h2>
+            <p class="lamda">
+              Pour construire un récit technique long, nous appliquons deux
+              principes fondamentaux et étroitement liés, l’un local et l’autre
+              global.
+            </p>
+            <p class="lamda">
+              Le principe local est la motivation : à chaque étape du récit, les
+              lecteurs doivent savoir pourquoi ils étudient le sujet en
+              question.(Ceci nous amène à juste titre au deuxième sens de «
+              motivation » : motiver le sujet aide également à motiver le
+              lecteur .)Comme nous le verrons dans la section 2.1 , l’incapacité
+              à trouver une bonne motivation est souvent un bon indice que le
+              sujet peut être reporté à plus tard (et parfois indéfiniment).
+            </p>
+            <p class="lamda">
+              Le principe global est la structure : ce qui est couvert où.La
+              structure est peut-être l’aspect le plus difficile à apprécier
+              d’un récit, car lorsqu’elle est bien faite, elle est invisible.En
+              règle générale, une grande partie de la structure émerge de
+              manière organique à travers un processus de raffinement successif
+              ( section 3 ), mais nous avons toujours besoin d’une forme
+              structurelle globale pour guider notre composition : le placement
+              des muscles peut motiver le placement des tendons, mais nous avons
+              toujours besoin d’un squelette.En particulier, comme cela a été
+              brièvement évoqué dans l’introduction, le tutoriel doit avoir un
+              arc narratif, avec un objectif primordial à atteindre.(En effet,
+              dans le cas d'un document plus long comme le didacticiel ruby on
+              Rails , chaque chapitre peut avoir un ou plusieurs arcs narratifs
+              qui lui sont propres.)
+            </p>
+            <p class="lamda">
+              Guidés par la nécessité de motiver chaque sujet, nous assemblons
+              les éléments constitutifs du récit, qui sont composés
+              principalement d'exemples concrets ( Section 2.2 ) soigneusement
+              choisis pour répéter les idées clés tout au long de la discussion
+              ( Section 2.3 ).Nous plaçons ensuite les exemples en fonction de
+              la structure, en effectuant les ajustements nécessaires ( Section
+              3 ).
+            </p>
+            <h2 id="trois">2.1 Reporter</h2>
+            <p class="lamda">
+              Lors de la rédaction d'un tutoriel pédagogique, il est tentant de
+              suivre une approche « logique », en rassemblant tout le matériel
+              sur chaque sujet particulier en un seul endroit.Bien qu'il
+              s'agisse d'une stratégie parfaitement judicieuse lors de la
+              création d'un ouvrage de référence , elle est mal adaptée à un
+              tutoriel pédagogique qui cherche à apprendre aux étudiants à
+              comprendre les choses par eux-mêmes .
+            </p>
+            <p class="lamda">
+              Lors de l'optimisation de l'expérience d'apprentissage du lecteur,
+              une meilleure approche consiste à différer le plus possible le
+              contenu : si un sujet n'a pas besoin d'être traité à un moment
+              donné, il est préférable d'attendre qu'il doive être traité.Par
+              exemple, le didacticiel ruby développe une page d’inscription qui
+              inclut le code suivant :
+            </p>
+            <p class="cod">
+              @user = User . new ( params [ :user ] ) # Pas l'implémentation
+              finale !
+            </p>
+            <p class="lamda">
+              Comme indiqué dans le texte suivant le caractère de commentaire
+              ruby #, ce n'est pas l'implémentation finale.La raison est que
+              l’implémentation réelle utilise une technique appelée paramètres
+              forts pour appliquer un modèle de sécurité sur les informations
+              soumises, mais cette technique n’est pas nécessaire pour écrire la
+              page d’inscription initiale.En différant ce matériel, nous
+              allégeons le fardeau du lecteur (et de l’auteur).
+            </p>
+            <p class="lamda">
+              Le principe de motivation peut aider à déterminer si le matériel
+              doit être différé ou non.Dans le cas de la page d'inscription au
+              didacticiel ruby , la motivation immédiate est de créer une page
+              capable de gérer les soumissions non valides (avec des messages
+              d'erreur affichés), une tâche qui ne nécessite pas la technique
+              plus avancée des paramètres forts pour fonctionner.Par conséquent,
+              le matériel plus avancé peut être reporté à plus tard, où il est à
+              son tour motivé par la nécessité de gérer les soumissions valides
+              et d'enregistrer l'utilisateur dans la base de données.Le sujet
+              encore plus avancé de la gestion des soumissions non valides dans
+              le navigateur à l'aide de JavaScript n'est jamais nécessaire au
+              cours de l'apprentissage du développement Web Rails, il est donc
+              reporté indéfiniment, c'est-à-dire qu'il est entièrement omis.
+            </p>
+            <p class="lamda">
+              Une méthode concrète pour différer le matériel est celle des
+              paires de référence avant-arrière.Il s’agit de couvrir
+              initialement certains éléments de base tout en incluant une
+              référence prospective à des éléments plus avancés.Par exemple, la
+              discussion initiale de la page d'inscription au didacticiel ruby
+              on Rails mentionnée ci-dessus apparaît dans la Figure 3 , où le
+              code avec le commentaire « Pas l'implémentation finale ! » est
+              suivi d'une référence directe à la « Section 7.3.2 ».
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut3.png" alt="" /></p>
+            <p class="fig">
+              Figure 3 : Une référence prospective à du matériel plus avancé.
+            </p>
+            <p class="lamda">
+              En arrivant à la section la plus avancée, nous incluons une
+              référence arrière, rappelant au lecteur le matériel précédent,
+              comme le montre la figure 4 .Notez que les numéros correspondent :
+              la section la plus avancée est en effet la section 7.3.2, comme
+              promis par la référence avant, et la liste de code d'origine est
+              la liste 7.16, comme promis par la référence arrière.( La figure 4
+              inclut également une deuxième référence en arrière, reliant le
+              contenu de la section 7.3.2 à une idée introduite dans la section
+              4.4.5.)Nous apprendrons comment créer de telles références avant
+              et arrière, ou références croisées , dans la section 3.3
+              .(Voyez-vous ce que j'ai fait là ( Figure 5 ) ?)
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut4.png" alt="" /></p>
+            <p class="fig">
+              Figure 4 : Une référence rétrospective à la liste de codes
+              pertinente.
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut5.jpg" alt="" /></p>
+            <p class="fig">Figure 5</p>
+            <h3>Rassurer le lecteur</h3>
+            <p class="lamda">
+              Lorsqu'on aborde une version simplifiée d'un sujet et qu'on remet
+              à plus tard des éléments plus avancés, il est souvent utile de
+              rassurer explicitement le lecteur sur le fait qu'il n'a pas besoin
+              de tout comprendre immédiatement.Les références anticipées sont
+              particulièrement utiles à cet égard ; lorsque je lis un tutoriel
+              qui promet de couvrir un sujet plus en profondeur « plus tard »,
+              cela me rend toujours nerveux : et si l’auteur oublie ?Et si je ne
+              le reconnaissais pas quand cela se produit ? — et ajouter une
+              référence en avant soulage cette anxiété.Lorsque nous écrivons «
+              Nous apprendrons à créer de telles références avant et arrière, ou
+              références croisées , dans la section 3.3 », il ne fait aucun
+              doute que le sujet sera effectivement couvert.Mieux encore, étant
+              donné que les systèmes de production de livres électroniques comme
+              Softcover relient automatiquement les références croisées, il est
+              possible de passer à l'étape suivante en un seul clic et de
+              constater que la promesse de couvrir des sujets plus avancés est
+              effectivement tenue.De même, lorsque la section future est
+              atteinte, la référence arrière permet au lecteur de revenir au
+              contenu précédent (s'il le souhaite) pour un rappel rapide de ce
+              qui a été abordé auparavant.
+            </p>
+
+            <h2 id="quatre">2.2 Exemples concrets</h2>
+            <p class="lamda">
+              Tout tutoriel technique doit être basé sur des exemples
+              concrets.L’abstraction a sa place, mais elle se situe généralement
+              après une série d’exemples, pas avant.La raison principale est que
+              le cerveau humain est plus apte à généraliser du concret à
+              l’abstrait que l’inverse.Plutôt que de décrire l’idée d’un fruit
+              sucré et ferme avec des tiges ligneuses et une peau brillante,
+              montrez simplement un tas de pommes différentes ( Figure 6 ) .
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut6.jpg" alt="" /></p>
+            <p class="fig">Figure 6 : Et ces pommes ?</p>
+            <p class="lamda">
+              Par exemple, supposons que notre tâche soit d’expliquer la
+              commande Unix ls(liste).(C'est l'un des sujets abordés dans le
+              tutorielde ligne de commande .)Imaginez si nous adoptions
+              l’approche abstraite illustrée par la page de manuel Unix (ou «
+              man ») pour ls( Listing 1 ).
+            </p>
+            <p class="cod">
+              Liste 1 : La page de manuel pour ls. <br />
+              $ man ls <br />
+              LS(1) Manuel des commandes générales BSD LS(1) <br />
+
+              NOM <br />
+              ls -- liste le contenu du répertoire <br />
+
+              SYNOPSIS <br />
+              ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1] [fichier ...] <br />
+              . <br />
+              . <br />
+              .
+            </p>
+            <p class="lamda">
+              Aïe !C'est formidable SYNOPSISpour une commande qui ressemble la
+              plupart du temps à ceci :
+            </p>
+            <p class="cod">$ ls</p>
+            <p class="lamda">
+              D’autres variantes courantes sont la vue « longue durée »,
+            </p>
+            <p class="cod">$ ls -l</p>
+
+            <p class="lamda">
+              et la vue individuelle des fichiers/répertoires, comme dans
+            </p>
+            <p class="cod">$ ls foo.txt</p>
+            <p class="lamda">
+              En fait, nous pouvons voir dans la liste 1 que la lettre l(pour «
+              long ») apparaît dans la liste des options entre crochets, et
+              (comme indiqué par [file ...]) la lscommande peut prendre un nom
+              de fichier comme argument.Mais sans le contexte fourni par des
+              exemples concrets, l’approche par défaut de la page de manuel
+              serait complètement écrasante.(En effet, d’après ma propre
+              expérience, je trouve que même les pages de manuel les plus
+              minutieusement écrites sont moins utiles que deux ou trois
+              exemples bien choisis.)
+            </p>
+            <p class="lamda">
+              Pour être le plus instructifs possible, les exemples doivent, à
+              tout moment du récit, trouver un équilibre entre la facilité et la
+              difficulté ( Figure 7 ) .Choisir de tels exemples demande de la
+              pratique et du jugement, mais une ligne directrice utile est,
+              conformément à la section 2.1 , de reporter ce qui peut être
+              reporté.Ainsi, la page d’inscription du didacticiel ruby illustrée
+              dans la figure 3 est difficile, mais pas trop difficile, car elle
+              reporte le contenu plus avancé à une section ultérieure.De plus,
+              comme nous le verrons plus loin dans la section 3.3 , il est utile
+              de se mettre à la place de l'apprenant : compte tenu des
+              connaissances du lecteur visé, quelle quantité d'informations
+              supplémentaires peut être traitée à ce stade du didacticiel
+              ?Lorsqu’ils sont bien réalisés, ces exemples de type Boucle d’or
+              peuvent induire un état de flux qui rend l’apprentissage immersif
+              et amusant ( Encadré 1 ).
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut7.jpg" alt="" /></p>
+            <p class="fig">
+              Figure 7 : Boucle d’or choisit des exemples qui lui conviennent
+              parfaitement.
+            </p>
+            <p class="comment">
+              Encadré 1. Suivre le courant <br />
+              Le flow est un état mental caractérisé par une concentration
+              complète, une immersion totale et une concentration apparemment
+              sans effort.L’état de flux est parfois appelé « être dans la zone
+              ».Dans son livre Flow: The Psychology of Optimal Experience , le
+              psychologue Mihaly Csikszentmihalyi (« MEE-hi chick-SENT-mee-hi »)
+              soutient que le flow est induit en partie par l’engagement dans
+              des tâches qui sont à la limite de la compétence, de sorte qu’avec
+              de la concentration, elles peuvent à peine être accomplies avec
+              succès.Par exemple, un grimpeur ( Figure 8 ) peut favoriser un
+              état de flow en choisissant un itinéraire qui est à la limite de
+              ses capacités : trop facile et il s'ennuiera, trop difficile et il
+              sera frustré.
+              <br />
+              En écartant le matériel inutile, en nous mettant à la place de
+              l'apprenant et en faisant preuve de jugement dans la sélection des
+              exemples, les auteurs de tutoriels peuvent aider les lecteurs à
+              entrer dans un état de flux.Le sentiment qui en résulte peut être
+              difficile à identifier exactement, mais si vos lecteurs disent des
+              choses comme « Je ne suis pas sûr de ce qu'il en est de ce
+              tutoriel, il semble juste me porter », vous saurez que vous êtes
+              sur la bonne voie.
+            </p>
+            <p class="cycle spec space">
+              <img src="/ressources/tut8.jpg" alt="" />
+            </p>
+            <p class="fig">
+              Figure 8 : Un itinéraire bien choisi peut aider les grimpeurs à
+              atteindre un état de flow.
+            </p>
+
+            <h2 id="cinq">2.3 Répétition</h2>
+            <p class="lamda">
+              Le choix d’une série d’exemples concrets comme dans la section 2.2
+              produit naturellement un certain degré de répétition.Mais cette
+              répétition est une fonctionnalité, pas un bug , car la répétition
+              est l’un des outils pédagogiques les plus sous-estimés.La clé est
+              d’inclure suffisamment de variété pour que le lecteur ne s’ennuie
+              pas – une variété qui se produit naturellement lorsque l’on
+              produit des exemples connexes de sophistication croissante.Un tel
+              modèle, connu sous le nom de méthode en spirale , renforce le
+              contenu précédent tout en stimulant les lecteurs avec juste assez
+              de nouveauté pour les maintenir intéressés et engagés ( encadré 1
+              ).
+            </p>
+            <p class="lamda">
+              Un exemple de cette technique dans 643-code Command Line to Be
+              Dangerous est le traitement des pipes , qui impliquent l'envoi de
+              la sortie d'un programme de ligne de commande à l'entrée d'un
+              autre.Au cours de plusieurs sections, ce tutoriel présente le
+              tuyau simple
+            </p>
+            <p class="code">$ head sonnets.txt | wc</p>
+            <p class="lamda">
+              et inclut ensuite immédiatement un exercice dont la réponse
+              apparaît comme
+            </p>
+            <p class="code">$ head -n 18 sonnets.txt | tail -n 14</p>
+            <p class="lamda">
+              Plus tard, lors de la présentation de l'utilitaire Unix grep, le
+              didacticiel dirige la sortie de la pscommande (état du processus)
+              pour sélectionner les programmes correspondant à une chaîne
+              particulière (« spring ») :
+            </p>
+            <p class="code">$ ps aux | grep spring</p>
+            <p class="lamda">
+              Un exercice sur cette technique suit ensuite, et une section
+              ultérieure comprend deux autres exercices utilisant des tuyaux.
+            </p>
+            <p class="lamda">
+              Le résultat de la progression ci-dessus (dont vous n'avez
+              certainement pas besoin de suivre les détails ici) est une
+              compréhension plus profonde du sujet que celle qui pourrait être
+              obtenue en mettant tout le matériel sur les tuyaux au même
+              endroit.En espaçant les exemples et en augmentant progressivement
+              leur sophistication, le tutoriel donne au lecteur le temps
+              d'assimiler les leçons précédentes, mettant ainsi en œuvre une
+              version simplifiée d'une puissante technique d'apprentissage
+              connue sous le nom de répétition espacée .
+            </p>
+            <p class="lamda">
+              La répétition est la mère de la mémoire, c'est pourquoi les bons
+              tutoriels répètent souvent le contenu le plus important à
+              plusieurs endroits du récit.
+            </p>
+
+            <h2 id="six">3 Affinement successif</h2>
+            <p class="lamda">
+              Les nobles principes de la section 2 sont intéressants, mais nous
+              devons finalement faire face à l’horreur de la page vide – ou
+              plutôt, à son équivalent numérique, l’éditeur de texte vide (
+              Figure 9 ).Face à cet ennemi puissant, il est naturel de ressentir
+              une certaine peur.(La perspective d’écrire un livre entier est
+              bien sûr intimidante, mais même un article peut être intimidant.)
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut9.png" alt="" /></p>
+            <p class="fig">
+              Figure 9 : Face à l’horreur d’un éditeur de texte vide.
+            </p>
+            <p class="lamda">
+              Pour contrôler cette peur, je recommande d’utiliser une stratégie
+              de raffinement successif : une série d’étapes réalisables
+              individuellement, chacune s’appuyant sur l’étape précédente et
+              nous rapprochant de notre objectif .Cela utilise ce que j’aime
+              appeler le principe du peigne , nommé d’après les réflexions de
+              Paul Graham sur le sujet :
+            </p>
+            <p class="lamda">
+              J'ai toujours été fasciné par les coiffures coiffées en peigne, en
+              particulier celles qui sont extrêmes et qui donnent l'impression
+              qu'un homme porte un béret fait de ses propres cheveux.Il s’agit
+              sûrement d’un sujet d’intérêt assez banal, le genre de
+              questionnement superficiel qu’il vaut mieux laisser aux
+              adolescentes.Et pourtant, il y a quelque chose en dessous.La
+              question clé, j'en suis venu à la conclusion qu'il fallait se
+              demander comment le peigneur ne voit pas à quel point il a l'air
+              bizarre.Et la réponse est qu’il a pu progressivement devenir
+              ainsi.Ce qui a commencé comme un peignage un peu minutieux de ses
+              cheveux sur une fine zone est progressivement devenu, en 20 ans,
+              une monstruosité.La progressivité est très puissante.Et ce pouvoir
+              peut également être utilisé à des fins constructives : tout comme
+              vous pouvez vous tromper en ressemblant à un monstre, vous pouvez
+              vous tromper en créant quelque chose de si grandiose que vous
+              n’auriez jamais osé planifier une telle chose.En fait, c’est ainsi
+              que la plupart des bons logiciels sont créés.Vous commencez par
+              écrire un noyau simplifié (à quel point cela peut-il être
+              difficile ?) et vous le transformez progressivement en un système
+              d’exploitation complet.D’où le saut suivant : pourriez-vous faire
+              la même chose en peinture, ou dans un roman ?
+            </p>
+            <p class="lamda">
+              Le principe du peigne est donc la puissance de la gradualité
+              .Lorsque vous rédigez un tutoriel narratif long, je recommande
+              vivement d’appliquer le principe du peigne à une stratégie de
+              raffinement successif.(Je déconseille fortement l'application de
+              peignes ( Figure 10 ).)
+            </p>
+
+            <p class="lamda">
+              Au fil du temps, vous finirez peut-être par développer votre
+              propre stratégie, mais en attendant, je vous recommande la
+              séquence suivante :
+              <br />
+              1-Association libre <br />
+              2-Contenu jeté <br />
+              3-Exposition principale <br />
+              4-Passe(s) de polissage <br />
+              5-Expédition <br />
+              Le reste de cette section décrit chacune de ces étapes plus en
+              détail.
+            </p>
+
+            <h2 id="sept">3.1 Association libre</h2>
+            <p class="lamda">
+              La première étape de la méthode de raffinement successif est
+              l’association libre .Je recommande d'ouvrir un nouveau fichier
+              dans un éditeur de texte et de saisir tous les sujets que vous
+              souhaitez aborder, à peu près dans l'ordre dans lequel vous
+              souhaitez les aborder (fournissant ainsi les premiers indices de
+              structure).Même à ce stade précoce, je recommande de prendre en
+              compte l'arc narratif du tutoriel, mais ne vous inquiétez pas du
+              raffinement ou du phrasé ; concentrez-vous sur le fait de sortir
+              les choses de votre tête et de les mettre sur la page.
+            </p>
+            <p class="lamda">
+              Si vous utilisez Softcover , les étapes de démarrage de l'étape
+              d'association libre pourraient ressembler à ceci :
+            </p>
+            <div class="cod">
+              <code
+                ><span></span
+                ><span class="gp"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >$</font
+                    ></font
+                  ></span
+                ><font dir="auto" style="vertical-align: inherit"
+                  ><font dir="auto" style="vertical-align: inherit">
+                    softcover new learn_enough_command_line <br /> </font></font
+                ><span class="gp"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >$
+                    </font></font
+                  ></span
+                ><span class="nb"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >cd</font
+                    ></font
+                  ></span
+                ><font dir="auto" style="vertical-align: inherit"
+                  ><font dir="auto" style="vertical-align: inherit">
+                    learn_enough_command_line/ <br /> </font></font
+                ><span class="gp"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >$</font
+                    ></font
+                  ></span
+                ><font dir="auto" style="vertical-align: inherit"
+                  ><font dir="auto" style="vertical-align: inherit">
+                    mv chapters/a_chapter.md chapters/command_line.md
+                    <br /> </font></font
+                ><span class="go"
+                  ><font dir="auto" style="vertical-align: inherit"
+                    ><font dir="auto" style="vertical-align: inherit"
+                      >&lt;modifiez Book.txt pour utiliser le nom de fichier
+                      command_line.md&gt;</font
+                    ></font
+                  ></span
+                >
+              </code>
+            </div>
+            <p class="lamda">
+              Ouvrez ensuite command_line.mddans un éditeur de texte,
+              sélectionnez et supprimez le contenu généré, et utilisez le
+              fichier vide résultant pour l'association libre.
+            </p>
+            <p class="lamda">
+              Pour vous donner une meilleure idée de ce à quoi cette étape
+              pourrait ressembler dans la vie réelle, je suis retourné à la
+              source du présent tutoriel (en utilisant git log) pour trouver
+              l'état du document lorsque j'ai fini de prendre des notes.Le
+              résultat apparaît dans la Figure 11 (qui utilise L A T E X au lieu
+              du Markdown par défaut, mais les principes sont les mêmes).Notez
+              que, même à ce stade précoce, j'avais inséré des sections, mais
+              cette partie est facultative.
+            </p>
+
+            <p class="cycle spec"><img src="/ressources/tut10.png" alt="" /></p>
+            <p class="fig">
+              Figure 11 : Le document actuel après l’étape d’association libre.
+            </p>
+
+            <p class="lamda">
+              Parce que le suivi des modifications dans un tutoriel complet
+              serait difficile à gérer (même dans un tutoriel aussi court que le
+              méta-tutoriel actuel), tout au long du reste de cette section,
+              nous développerons un exemple simplifié basé sur un tutoriel
+              hypothétique sur le langage de programmation ruby.En particulier,
+              après l’étape d’association libre, une partie d’un tel tutoriel
+              pourrait ressembler à la liste 2 .
+            </p>
+
+            <p class="cod">
+              Liste 2 : Un fragment d’un document d’association libre
+              hypothétique de didacticiel ruby. <br />
+              1 Structures de données ruby <br />
+              2 <br />
+              3 Nombres (entiers, flottants) <br />
+              4 <br />
+              5 Chaînes <br />
+              6 <br />
+              7 Tableaux <br />
+              8 <br />
+              9 Hachages
+            </p>
+
+            <h2 id="huit">3.2 Contenu jeté</h2>
+            <p class="lamda">
+              D’après mon expérience, le contenu jeté est la deuxième étape la
+              plus douloureuse dans le processus de raffinement successif.(Le
+              plus douloureux est l'exposition principale ( Section 3.3 ).)Le
+              throwdown nécessite une énergie d’activation relativement élevée (
+              Figure 12 ) 14 — le simple fait de commencer demande beaucoup de
+              concentration et d’initiative, et vous devez charger beaucoup de
+              choses dans votre tête pour être productif.
+            </p>
+
+            <p class="cycle spec"><img src="/ressources/tut11.png" alt="" /></p>
+            <p class="fig">
+              Figure 12 : L’énergie d’activation pour la projection de contenu
+              et l’exposition principale est élevée.
+            </p>
+
+            <p class="lamda">
+              Dans la présentation du contenu, nous parcourons le squelette
+              résultant de l'association libre ( Section 3.1 ) et commençons à
+              l'étoffer avec des exemples de code ( Encadré 2 ), des figures,
+              des tableaux, des sections, etc. ( Section 4 ).Prenons par exemple
+              la ligne « hashes » de l’association libre (ligne 9 dans la liste
+              2 ).Au stade de la présentation du contenu, nous pourrions
+              l'étendre en y ajoutant quelques paragraphes d'ébauche et quelques
+              exemples de code, comme indiqué dans la liste 3 .
+            </p>
+            <p class="cod">
+              Liste 3 : Le contenu des hachages. <br />
+              1 ## Structures de données <br />
+              2 . <br />
+              3 . <br />
+              4 . <br />
+              5 ### Hachages <br />
+              6 \label { sec:hashes } <br />
+              7 <br />
+              8 Les hachages sont comme des tableaux, mais où l'index n'a pas
+              besoin d'être un entier. <br />
+              9 Très courant dans les frameworks Web ruby comme Sinatra et
+              Rails, utilisera <br />
+              10 fréquemment <br />
+              11 <br />
+              12 commencer avec un hachage vide {} <br />
+              13 <br />
+              14 ```irb <br />
+              15 >> hash = {} <br />
+              16 >> hash['foo'] = 'bar' <br />
+              17 >> hash['baz'] = 'quux' <br />
+              18 >> hash <br />
+              19 => { "foo"=>"bar", "baz"=>"quux" } <br />
+              20 ``` <br />
+              21 <br />
+              22 Notez que les éléments de hachage sont dans le même ordre que
+              celui défini. C'est vrai dans <br />
+              ruby 2 ou versions ultérieures, mais c'est une mauvaise idée de se
+              fier à ce fait, car en général, <br />
+              les hachages parlants (également appelés *dictionnaires* ou
+              *cartes*) ne garantissent pas toujours l' ordre de leurs éléments.
+            </p>
+            <p class="lamda">
+              La liste 3 inclut un exemple de code (lignes 14 à 20) et ajoute
+              une section sur les structures de données (ligne 1) contenant une
+              sous-section sur les hachages (ligne 5, avec une étiquette pour
+              les références croisées sur la ligne 6).(Les points de suspension
+              verticaux dans la liste 3 représentent le contenu omis.)Notez en
+              particulier les niveaux de section, qui sont indiqués dans
+              Markdown avec des symboles dièse tels que ###et sont équivalents
+              aux balises d'en-tête HTML ( h1, h2, etc.).Ne vous inquiétez pas
+              trop de la profondeur de chaque section (par exemple, si elle est
+              de ##0 ou ###), car cela peut être modifié pendant l'exposition
+              principale ( Section 3.3 ) ou dans l'une des passes de polissage (
+              Section 3.4 ).
+            </p>
+            <p class="comment">
+              Encadré 2. Exemple de code <br />
+              Lors de la rédaction d'un didacticiel de programmation, c'est une
+              bonne idée d'inclure un exemple de code pour fournir des exemples
+              concrets de concepts de programmation abstraits.Si vos exemples de
+              code sont petits et autonomes, ils peuvent être développés dans le
+              cadre du contenu présenté ( Section 3.2 ), mais si vous créez un
+              exemple d'application plus complet (comme celui utilisé, par
+              exemple, dans le didacticiel ruby ), je recommande de diviser son
+              développement en une étape distincte, généralement immédiatement
+              avant le contenu présenté.Essayez de concevoir l'exemple
+              d'application en utilisant des principes similaires à ceux décrits
+              dans la section 2.1 ; par exemple, si une fonctionnalité
+              particulière n'est pas nécessaire pour l'exposition, préférez la
+              reporter à plus tard (ou laissez-la de côté complètement).
+            </p>
+            <p class="lamda">
+              Au stade de la présentation du contenu, il est courant de modifier
+              l'ordre des sujets à mesure que nous avons une meilleure idée de
+              la progression la plus naturelle des idées.En ajoutant des
+              sections au fur et à mesure et en les réorganisant si nécessaire,
+              une grande partie de la structure du document devrait émerger de
+              manière organique (ce qui signifie que vous n'aurez probablement
+              pas besoin de faire un plan explicite de votre document).En outre,
+              la portée devrait commencer à devenir claire, notamment sous la
+              forme du nombre de sections dans chaque chapitre ou article.Bien
+              qu'il y ait une petite marge de manœuvre, je recommande
+              généralement de limiter la portée à 4 à 6 sections (plus une
+              éventuelle conclusion) dans un chapitre donné.Voir leTutoriel ruby
+              on Rails et apprenez suffisamment de ligne de commande pour être
+              dangereux pour des exemples concrets.
+            </p>
+            <p class="lamda">
+              Au stade de la présentation du contenu, il est également
+              acceptable de ne pas avoir d'exposition soignée, et des éléments
+              comme les introductions et les transitions peuvent également être
+              ignorés.Essentiellement, tout ce qui ressemble à une excuse pour
+              ne pas déposer de contenu (et qui empêche donc de dépasser le
+              seuil d’énergie d’activation) peut être reporté à l’exposition
+              principale ( Section 3.3 ).Il est toutefois important de ne pas
+              oublier la motivation ; la raison pour laquelle chaque partie du
+              contenu est incluse doit être clairement indiquée dans le
+              texte.Par exemple, la liste 3 prend soin de mentionner que les
+              hachages ruby sont importants pour comprendre les frameworks Web
+              ruby, un objectif probable pour les lecteurs d'un didacticiel
+              ruby.
+            </p>
+            <h2 id="neuf">3.3 Exposition principale</h2>
+            <p class="lamda">
+              Le troisième passage du tutoriel est l'exposition principale.Comme
+              pour le throwdown, l'exposition principale nécessite une énergie
+              d'activation élevée ( Figure 12 ).D'après mon expérience, c'est
+              l'étape la plus douloureuse, car c'est dans l'exposition
+              principale que doivent être abordés la plupart des éléments que
+              nous avons différés dans les étapes précédentes.En particulier,
+              nous devons inclure des brouillons d’explications complètes pour
+              tous les sujets abordés.Pour faciliter cela, je suggère (comme
+              mentionné dans la section 2.2 ) que vous essayiez de vous mettre à
+              la place de l’apprenant : à chaque étape, pensez : « Que
+              savons-nous à ce stade de l’exposé ? »De plus, l'exposé principal
+              devrait inclure les premières tentatives de transitions et de
+              références croisées ( encadré 3 ) 15 , et je recommande également
+              d'écrire au moins des versions ébauche de tous les encadrés
+              annexes que vous pensez vouloir dans le produit fini.
+            </p>
+            <p class="comment">
+              Encadré 3. Références croisées <br />
+              Comme indiqué dans la section 2.1 , les références croisées nous
+              offrent un moyen naturel de reporter le contenu plus avancé à une
+              section ultérieure, puis de revenir au contenu moins avancé une
+              fois cette section atteinte.Les références et les liens qui en
+              résultent lient réellement le didacticiel ( Figure 13 ) . <br />
+
+              <br />
+              (Tous les systèmes de composition ne prennent pas en charge de
+              telles références croisées, ce qui est l’une des raisons pour
+              lesquelles mes cofondateurs et moi-même avons développé le système
+              de publication Softcover .Softcover prend en charge les références
+              croisées grâce au puissant langage de composition L A T E X ,
+              intégré à Markdown ou en version brute de L A T E X. Les exemples
+              présentés ici supposent que vous utilisez Softcover ou un système
+              similaire.
+
+              <br />
+              Une technique que j'aime particulièrement utiliser lors de la
+              présentation du contenu ( Section 3.2 ) ou de l'exposition
+              principale ( Section 3.3 ) consiste à insérer une référence avant
+              brisée (indéfinie) comme rappel pour la compléter plus tard :
+
+              <br />
+              Nous aborderons ici quelques points de base.Dans la section
+              sec:advanced_stuff , nous aborderons des sujets plus avancés.
+
+              <br />
+              Ceci est produit en utilisant une étiquette L A T E X pour
+              identifier la section ( ), qui est également l'étiquette qui doit
+              être utilisée lorsque la section la plus avancée est atteinte :
+              sec:advanced_stuff
+
+              <br />
+              \section{Trucs avancés} <br />
+              \label{sec:éléments_avancés} <br />
+              À ce stade, la référence directe sera renseignée automatiquement :
+
+              <br />
+              Nous aborderons ici quelques points de base.Dans la section 3,
+              nous aborderons des sujets plus avancés.
+
+              <br />
+              C'est également une bonne idée de mettre une référence arrière :
+
+              <br />
+              Dans la section 2, nous avons vu quelques éléments de base.Dans
+              cette section, nous abordons des sujets plus avancés. Pour plus
+              d'informations sur la syntaxe nécessaire pour créer de telles
+              références, voir « Étiquettes et références croisées » dans The
+              Softcover Book .
+            </p>
+
+            <p class="lamda">
+              Pour revenir à l'exemple d'un tutoriel ruby, rappelez-vous que la
+              liste 3 indiquait la direction de base de l'exposition et
+              présentait un exemple de code, mais ne tentait pas de fournir une
+              explication complète. La liste 4 montre un exemple de la manière
+              dont nous pourrions compléter la liste 3 avec une meilleure
+              introduction et des références au matériel précédent.Je suggère de
+              revoir la liste 3 , puis de lire la liste 4 jusqu'au bout pour
+              vous aider à développer une intuition des changements impliqués,
+              mais ne vous inquiétez pas de repérer chaque petite différence .
+            </p>
+            <p class="comment">
+              Liste 4 : L'exposition principale pour les hachages. ## Structures
+              de données . . . ### Tableaux \label { sec:tableaux } . . . Nous
+              discuterons de la structure de données *hash* étroitement liée
+              dans Section~ \ref { sec:hachages } . . . . ### Hachages \label {
+              sec:hachages } Nous avons vu dans la section ~ \ref { sec:arrays }
+              que les tableaux ruby peuvent être modélisés comme un séquence
+              d'éléments indexés par des entiers, de sorte que `a[0]` est le
+              premier élément du tableau, « a[1] » est le deuxième élément, et
+              ainsi de suite. On peut penser à des hachages comme étant des
+              tableaux où l'index n'a pas besoin d'être un entier. (En effet,
+              dans certains langages, notamment Perl, les hachages sont appelés
+              « tableaux associatifs » pour cela (raison.) Les hachages sont
+              couramment utilisés, entre autres, dans les frameworks Web ruby
+              comme Sinatra et Rails, et les comprendre est essentiel pour les
+              utiliser cadres. Rappel de la liste ~ \ref { code:empty _ array }
+              que nous pouvons écrire un ruby vide tableau comme « [] ». De
+              même, un hachage ruby vide est écrit entre accolades : ` {} `.
+              Comme pour les tableaux, la meilleure façon d'apprendre les
+              hachages est de jouer avec eux. lors d'une séance « irb » : ```irb
+              >> h = {} >> h['foo'] = 'bar' >> h['baz'] = 'quux' >> h => {
+              "foo"=>"bar", "baz"=>"quux" } ``` Notez que ruby stocke les
+              éléments de hachage dans le même ordre dans lequel ils ont été
+              défini. Cet ordre est maintenu par conception dans ruby 2 ou
+              versions ultérieures, mais c'est un mauvaise idée de se fier à ce
+              fait ; l'ordre des éléments de hachage n'est pas garanti par les
+              précédents versions de ruby, et cela n'est généralement pas
+              garanti dans d'autres langages. . . . #### Exercices \label {
+              sec:execises _ hachages } 1. Définissez un hachage avec des clés
+              égales à `"foo"`, `"bar"` et `"baz"`, avec des valeurs égal à ces
+              mêmes cordes inversées. 2. En lisant l'API ruby sur les hachages,
+              apprenez à parcourir un hachage. Appliquez ceci au hachage créé
+              dans l'exercice précédent en imprimant chaque paire clé-valeur. .
+              . .
+            </p>
+            <p class="lamda">
+              En comparant la liste 3 avec la liste 4 , nous voyons que cette
+              dernière élargit considérablement la discussion tout en prenant
+              soin de fonder la discussion sur les hachages sur des éléments
+              précédents, dans ce cas en faisant référence à une section
+              précédente sur les tableaux.Notez que nous avons également ajouté
+              des transitions entre les sections, telles que « Nous avons vu… »
+              et « Rappel de… », qui contribuent à assurer une fluidité d'un
+              sujet à l'autre.
+            </p>
+            <p class="lamda">
+              Afin d’examiner les changements plus en détail, il est utile
+              d’examiner les changements spécifiques apportés entre la liste 3
+              et la liste 4 .Par exemple, la liste 4 s'étend
+            </p>
+            <p class="cod">
+              Les hachages sont comme des tableaux, mais où l'index n'a pas
+              besoin d'être un entier. Très courant dans les frameworks Web ruby
+              comme Sinatra et Rails, il sera utilisé fréquemment
+            </p>
+            <p class="lamda">de la liste 3 à la liste beaucoup plus longue</p>
+            <p class="cod">
+              Nous avons vu dans la section ~ \ref { sec:arrays } que les
+              tableaux ruby peuvent être modélisés comme un séquence d'éléments
+              indexés par des entiers, de sorte que `a[0]` est le premier
+              élément du tableau, « a[1] » est le deuxième élément, et ainsi de
+              suite. On peut penser à des hachages comme étant des tableaux où
+              l'index n'a pas besoin d'être un entier. (En effet, dans certains
+              langages, notamment Perl, les hachages sont appelés « tableaux
+              associatifs » pour cela (raison.) Les hachages sont couramment
+              utilisés, entre autres, dans les frameworks Web ruby comme Sinatra
+              et Rails, et les comprendre est essentiel pour les utiliser
+              cadres.
+            </p>
+            <p class="lamda">
+              Une extension encore plus spectaculaire se produit pour le contenu
+              de Throwdown
+            </p>
+            <p class="cod">commencer avec un hachage vide {}</p>
+            <p class="lamda">qui s'étend à</p>
+            <p class="cod">
+              Rappel de la liste ~ \ref { code:empty _ array } que nous pouvons
+              écrire un ruby vide tableau comme « [] ». De même, un hachage ruby
+              vide est écrit entre accolades : ` {} `. Comme pour les tableaux,
+              la meilleure façon d'apprendre les hachages est de jouer avec eux.
+              lors d'une séance « irb » :
+            </p>
+            <p class="lamda">
+              De telles extensions de 1 à 3 lignes en paragraphes complets ne
+              sont pas rares lors de l’exposé principal, ce qui est l’une des
+              raisons pour lesquelles je considère que c’est l’étape la plus
+              difficile à réaliser.
+            </p>
+            <p class="lamda">
+              Il convient de noter que la liste 4 ajoute également quelques
+              exercices à la fin de la (sous-)section :
+            </p>
+            <p class="cod">
+              #### Exercices \label { sec:execises _ hashes } 1. Définissez un
+              hachage avec des clés égales à `"foo"`, `"bar"` et `"baz"`, avec
+              des valeurs égal à ces mêmes cordes inversées. 2. En lisant l'API
+              ruby sur les hachages, apprenez à parcourir un hachage. Appliquez
+              ceci au hachage créé dans l'exercice précédent en imprimant chaque
+              paire clé-valeur.
+            </p>
+            <p class="lamda">
+              L'ajout d'exercices est facultatif, mais l'expérience montre
+              qu'ils sont généralement appréciés par les lecteurs du
+              tutoriel.(Les placer immédiatement après la section correspondante
+              permet de renforcer le matériel, bien que les rassembler à la fin
+              du chapitre soit également une possibilité.)
+            </p>
+            <p class="lamda">
+              Le résultat de la réalisation de l'exposition principale est un
+              brouillon complet de notre document didactique (article ou
+              chapitre).Il reste encore beaucoup de travail, mais à ce stade,
+              j'ai généralement l'impression d'écrire « en descente ».
+            </p>
+            <h2 id="dix">3.4 Polissage</h2>
+            <p class="lamda">
+              Après l'exposition principale viennent une ou plusieurs passes de
+              polissage .D’après mon expérience, le polissage prend du temps
+              mais est relativement facile, nécessitant une charge cognitive
+              relativement faible et une énergie d’activation
+              proportionnellement faible.
+            </p>
+            <p class="lamda">
+              Un exemple de polissage apparaît dans la liste 5 , qui représente
+              un seul passage de polissage à travers la liste 4 .Ne vous souciez
+              pas de tous les détails ; je vous suggère de parcourir la liste 5
+              , puis de passer à la répartition des différences spécifiques qui
+              apparaît immédiatement après.
+            </p>
+            <p class="cod">
+              Liste 5 : Polissage du matériau sur les hachages. ### Hachages
+              \label { sec:hashes } Nous avons vu dans la section ~ \ref {
+              sec:arrays } que les tableaux ruby peuvent être modélisés comme un
+              séquence d'éléments indexés par des entiers, de sorte que `a[0]`
+              est le premier élément du tableau, « a[1] » est le deuxième
+              élément, et ainsi de suite. On peut penser à un hachage comme
+              étant comme un tableau où l'index n'a pas besoin d'être un entier.
+              (En effet, dans certains langages, notamment Perl, les hachages
+              sont appelés « tableaux associatifs » pour (cette raison.) Les
+              hachages sont couramment utilisés, entre autres, dans le Web ruby
+              cadres tels que Sinatra et Rails, et les comprendre est essentiel
+              pour en utilisant ces cadres. Rappel de la liste ~ \ref {
+              code:empty _ array } que nous pouvons écrire un ruby vide tableau
+              en utilisant des crochets comme « [] ». De même, nous pouvons
+              écrire un tableau ruby vide hachage utilisant des accolades : ` {}
+              `. Comme pour les tableaux, la meilleure façon d'en apprendre
+              davantage hachages consiste à jouer avec eux dans une session «
+              irb », comme indiqué dans Liste~ \ref { code:hash _ irb } . \begin
+              { codelisting } \label { code:hash _ irb } \codecaption {
+              Définition d'un hachage dans \kode { irb } . } ```irb >> h = {} >>
+              h['foo'] = 'bar' >> h['baz'] = 'quux' >> h => { "foo"=>"bar",
+              "baz"=>"quux" } ``` \end { liste de codes } \noindent Nous voyons
+              dans la liste ~ \ref { code:hash _ irb } que les hachages sont
+              constitués de *paires clé-valeur*, qui peuvent être écrites en
+              termes de l'opérateur « hashrocket » `=>`: ```rubis { "foo" =>
+              "bar" } ``` \noindent (Ici, nous avons inclus des espaces
+              supplémentaires pour suivre un ruby commun convention, mais ces
+              espaces sont ignorés par l'interpréteur ruby.) La clé est la
+              chaîne `"foo"` et la valeur est la chaîne `"bar"`. Notez que « irb
+              » imprime les éléments de hachage dans le même ordre dans lequel
+              ils ont été défini. Par exemple, la dernière ligne du Listing~
+              \ref { code:hash _ irb } affiche ```irb => { "foo"=>"bar",
+              "baz"=>"quux" } ``` \noindent au lieu de ```irb => {
+              "baz"=>"quux", "foo"=>"bar" } ``` \noindent Ceci est dû au fait
+              que la paire clé-valeur `"foo" => "bar"` a été définie La paire
+              clé-valeur « baz » => « quux » a été définie en premier. Cet ordre
+              est maintenu par conception dans ruby 2 ou versions ultérieures,
+              mais c'est une mauvaise idée de s'y fier ce fait ; l'ordre des
+              éléments de hachage n'est pas garanti par les versions antérieures
+              de ruby, et cet ordre n’est généralement pas conservé dans
+              d’autres langues. Le hachage dans Listing~ \ref { code:hash _ irb
+              } utilise des chaînes (Section~ \ref { sec:strings } ) pour les
+              clés et les valeurs, mais il est plus idiomatique en ruby
+              d'utiliser des symboles au lieu de cela, comme indiqué dans la
+              liste ~ \ref { code:hash _ symbol _ keys } . Cette utilisation est
+              particulièrement courant dans ruby. \begin { codelisting } \label
+              { code:hash _ symbol _ keys } \codecaption { Définition d'un
+              hachage à l'aide de clés de symboles. } ```irb >> h = {} >>
+              h[:foo] = 'bar' >> h[:baz] = 'quux' >> h => { :foo=>"bar",
+              :baz=>"quux" } ``` \end { liste de codes } . . .
+            </p>
+            <p class="lamda">
+              Par rapport à la liste 4 , nous voyons que la liste 5 peaufine un
+              peu le langage, en changeant, par exemple,
+            </p>
+            <p class="cod">
+              Nous pouvons considérer les hachages comme des tableaux où l'index
+              n'a pas besoin d'être un entier.
+            </p>
+            <p class="lamda">à</p>
+            <p class="cod">
+              Nous pouvons considérer un hachage comme un tableau où l'index n'a
+              pas besoin d'être modifié. être un entier.
+            </p>
+            <p class="lamda">et</p>
+            <p class="cod">
+              Notez que les éléments de hachage sont dans le même ordre que
+              celui défini. Ceci est vrai dans ruby 2 ou version ultérieure,
+              mais c'est une mauvaise idée de se fier à ce fait, car
+              généralement Les hachages parlants (également appelés
+              *dictionnaires* ou *cartes*) ne garantissent pas toujours l'ordre
+              de leurs éléments.
+            </p>
+            <p class="lamda">à</p>
+            <p class="cod">
+              Notez que ruby stocke les éléments de hachage dans le même ordre
+              dans lequel ils ont été défini. Cet ordre est maintenu par
+              conception dans ruby 2 ou versions ultérieures, mais c'est un
+              mauvaise idée de se fier à ce fait ; l'ordre des éléments de
+              hachage n'est pas garanti par les précédents versions de ruby, et
+              cela n'est généralement pas garanti dans d'autres langages.
+            </p>
+            <p class="lamda">
+              La liste 5 corrige également une omission importante de la liste 4
+              , à savoir la définition des hachages comme paires clé-valeur :
+            </p>
+            <p class="cod">
+              \noindent Nous voyons dans la liste ~ \ref { code:hash _ irb } que
+              les hachages sont constitués de *paires clé-valeur*, qui peuvent
+              être écrites en termes de l'opérateur « hashrocket » `=>`:
+              ```rubis { "foo" => "bar" } ``` \noindent (Ici, nous avons inclus
+              des espaces supplémentaires pour suivre un ruby commun convention,
+              mais ces espaces sont ignorés par l'interpréteur ruby.) La clé est
+              la chaîne `"foo"` et la valeur est la chaîne `"bar"`.
+            </p>
+            <p class="lamda">
+              Notez que cette modification inclut également deux occurrences de
+              la commande L A T E X\noindent , qui supprime l'indentation des
+              paragraphes dans la sortie PDF. <br />
+
+              La liste 5 ajoute également des éléments sur l'utilisation des
+              symboles ruby comme clés, ce qui renforce la motivation puisque
+              ces clés sont couramment utilisées dans les frameworks Web ruby (
+              liste 6 ).
+            </p>
+            <p class="cod">
+              Liste 6 : Ajout de matériel sur les symboles ruby. Le hachage dans
+              Listing~ \ref { code:hash _ irb } utilise des chaînes (Section~
+              \ref { sec:strings } ) pour les clés et les valeurs, mais il est
+              plus idiomatique en ruby d'utiliser des symboles au lieu de cela,
+              comme indiqué dans la liste ~ \ref { code:hash _ symbol _ keys } .
+              Cette utilisation est particulièrement courant dans ruby. \begin {
+              codelisting } \label { code:hash _ symbol _ keys } \codecaption {
+              Définition d'un hachage à l'aide de clés de symboles. } ```irb >>
+              h = {} >> h[:foo] = 'bar' >> h[:baz] = 'quux' >> h => {
+              :foo=>"bar", :baz=>"quux" } ``` \end { liste de codes }
+            </p>
+            <p class="lamda">
+              Enfin, la liste 5 comprend deux listes de codes (par opposition à
+              de simples exemples de codes).Le premier, qui définit un hachage
+              dans irb, convertit un exemple de code précédent du Listing 4 en
+              un listing, tandis que le second, qui explique les clés de
+              symboles ( Listing 6 ), est un nouvel ajout.Dans les deux cas, la
+              raison du changement est de faciliter la consultation ultérieure
+              de la liste concernée.Ceci est particulièrement utile si la liste
+              est suffisamment importante pour justifier une référence croisée à
+              un autre endroit du didacticiel.(Par exemple, le Listing 6 était
+              un listing de code régulier après l'exposition principale du
+              présent méta-tutoriel, mais a été promu au rang de listing de code
+              lors du deuxième passage de polissage lorsque j'ai réalisé que je
+              voulais m'y référer.)
+            </p>
+            <p class="lamda">
+              Les exemples ci-dessus sont conçus pour vous donner une idée
+              générale de ce qu'un passage de polissage peut accomplir.Vous
+              devrez utiliser votre propre jugement en fonction des détails du
+              didacticiel sur lequel vous travaillez.
+            </p>
+
+            <h2 id="onze">3.5 Expédition</h2>
+            <p class="lamda">
+              Selon les mots de Steve Jobs : les vrais artistes expédient.En
+              tant qu'artistes-tuteurs, notre travail n'est pas terminé tant que
+              nous n'avons pas expédié , c'est-à-dire tant que nous n'avons pas
+              publié notre travail dans le monde.Une fois que nous avons
+              effectué quelques passes de polissage, il est temps de faire
+              sortir notre jeune tutoriel du nid et de le faire voler.
+            </p>
+            <p class="lamda">
+              La manière dont vous expédiez dépend de votre style, de votre
+              public actuel (le cas échéant) et de vos outils, mais dans mon
+              cas, l'expédition signifie principalement (a) déployer le
+              didacticiel sur une URL personnalisée sur Softcover (par exemple,
+              www.railstutorial.org ) et (b) envoyer une annonce via ma liste de
+              diffusion, mes comptes Twitter et Facebook et Hacker News .
+            </p>
+            <p class="lamda">
+              Lorsque j’expédie un produit pour la première fois, même s’il a
+              généralement subi quelques passages de polissage ( Section 3.4 )
+              et qu’il est généralement en bon état, j’aime toujours le décrire
+              comme un « brouillon ».Il s’agit principalement de gérer les
+              attentes : il est préférable que le document soit plus soigné que
+              ce à quoi les gens s’attendent plutôt que d’être déçus par des
+              bugs ou des fautes de frappe. Cela permet également d’établir un
+              bon cadre pour solliciter des commentaires .De plus, j'expédie
+              parfois la première ébauche publique sous forme de version en
+              ligne gratuite du produit, ce qui maximise le lectorat (et le
+              référencement ).Cela me permet effectivement d'externaliser la
+              rédaction et la révision technique à mes lecteurs.(Je constate que
+              de nombreux lecteurs apprécient d’être impliqués de cette manière,
+              et ma gratitude pour leur aide est sincère.)
+            </p>
+            <p class="lamda">
+              Après avoir intégré les commentaires des lecteurs pendant un
+              certain temps (ce qui implique souvent une ou deux autres phases
+              de peaufinage), il est temps de procéder au lancement « officiel
+              ».Cette promotion est effectuée via les mêmes canaux mentionnés
+              précédemment (liste de diffusion, Twitter, etc.) et coïncide
+              généralement avec le début officiel des ventes de produits.Si,
+              comme c'est souvent le cas, je réalise également des screencasts
+              basés sur le tutoriel écrit, c'est un troisième événement de
+              lancement.Et après cela , il est généralement temps de faire une
+              pause.(J’ai entendu dire que la Polynésie française est agréable à
+              cette période de l’année… ( Figure 14 )
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut12.jpg" alt="" /></p>
+            <p class="fig">
+              Figure 14 : La Polynésie française est un endroit agréable pour
+              une pause.
+            </p>
+            <h2 id="douze">4 Les astuces du métier</h2>
+            <p class="lamda">
+              Après avoir discuté de quelques principes généraux ( Section 2 )
+              et des principales étapes du raffinement successif ( Section 3 ),
+              nous discuterons dans cette dernière section de quelques astuces
+              diverses du métier à garder à l'esprit lors de la rédaction de
+              tutoriels narratifs.
+            </p>
+            <h2 id="treize">4.1 Flotteurs</h2>
+            <p class="lamda">
+              Les flottants sont des objets dont la position n'est pas fixe dans
+              un document imprimé ou PDF, mais qui « flottent » dans le but
+              d'obtenir une mise en page propre.Même si la position est fixe
+              dans les formats HTML et basés sur HTML comme EPUB et MOBI, par
+              souci de cohérence, nous utilisons le terme même dans ces
+              contextes.Les flottants sont principalement ajoutés lors de la
+              présentation du contenu ( section 3.2 ) et de l'exposition
+              principale ( section 3.3 ), bien qu'il ne soit pas inhabituel
+              d'ajouter également quelques flottants lors de l'étape de
+              polissage ( section 3.4 ).
+            </p>
+            <h3>Chiffres</h3>
+            <p class="lamda">
+              Les figures sont probablement le type de flotteur le plus
+              courant.Bien que les figures puissent être constituées de texte
+              ordinaire, la plupart du temps, elles comportent des images
+              intégrées, comme le montre la figure 15 .Comme pour les sections
+              et les listes de codes, les figures peuvent être référencées de
+              manière croisée ; en effet, elles doivent être référencées, et de
+              nombreux éditeurs appliquent la règle selon laquelle chaque figure
+              doit être référencée quelque part dans le texte principal
+              (généralement dans l'ordre dans lequel elles apparaissent).
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut13.png" alt="" /></p>
+            <p class="fig">
+              Figure 15 : Une figure flottante dans un document PDF.
+            </p>
+            <p class="lamda">
+              Bien que les figures soient fréquemment utilisées pour illustrer
+              les conclusions clés (tracés de données, graphiques, etc.) dans
+              les articles et les livres de style académique, une astuce du
+              métier lors de la rédaction de tutoriels consiste à inclure des
+              images de choses mignonnes, comestibles, dangereuses, etc. (
+              Figure 16 ) .Il s’agit d’un hack neurologique astucieux qui aide à
+              réinitialiser la capacité d’attention du lecteur en s’appuyant sur
+              l’intérêt naturel des humains pour les choses mignonnes,
+              comestibles et dangereuses .C'est une bonne idée d'ancrer ces
+              chiffres dans la discussion, mais ils peuvent toujours être
+              efficaces même si le lien est assez tangentiel (par exemple, la
+              figure 2 ).
+            </p>
+            <h3>Tables</h3>
+            <p class="lamda">
+              Les tableaux sont utiles pour collecter et résumer les
+              informations trouvées ailleurs dans le texte, combinant
+              efficacement les mérites d'un didacticiel narratif avec ceux d'un
+              ouvrage de référence.Par exemple, chaque section de Apprendre
+              suffisamment de ligne de commande se termine par un tableau comme
+              celui présenté dans le tableau 1 .
+            </p>
+
+            <table class="tabular">
+              <tbody>
+                <tr class="bottom_border">
+                  <td class="align_left">
+                    <strong
+                      ><font dir="auto" style="vertical-align: inherit"
+                        ><font dir="auto" style="vertical-align: inherit"
+                          >Commande</font
+                        ></font
+                      ></strong
+                    >
+                  </td>
+                  <td class="align_left">
+                    <strong
+                      ><font dir="auto" style="vertical-align: inherit"
+                        ><font dir="auto" style="vertical-align: inherit"
+                          >Description</font
+                        ></font
+                      ></strong
+                    >
+                  </td>
+                  <td class="align_left">
+                    <strong
+                      ><font dir="auto" style="vertical-align: inherit"
+                        ><font dir="auto" style="vertical-align: inherit"
+                          >Exemple</font
+                        ></font
+                      ></strong
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align_left"><code class="tt">curl</code></td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Interagir avec les URL</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ curl -O example.com</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left"><code class="tt">which</code></td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Localiser un programme sur le chemin</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ which curl</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">head &lt;file&gt;</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Afficher la première partie du fichier</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ head foo</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">tail &lt;file&gt;</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Afficher la dernière partie du fichier</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ tail bar</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">wc &lt;file&gt;</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Compter les lignes, les mots, les octets</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ wc foo</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">cmd1 | cmd2</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Tuyau
+                      </font></font
+                    ><code class="tt">cmd1</code
+                    ><font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >à</font
+                      ></font
+                    ><code class="tt">cmd2</code>
+                  </td>
+                  <td class="align_left"><code>$ head foo | wc</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">less &lt;file&gt;</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Afficher le contenu du fichier de manière
+                        interactive</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ less foo</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">grep &lt;string&gt; &lt;file&gt;</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Rechercher une chaîne dans un fichier</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ grep foo bar.txt</code></td>
+                </tr>
+                <tr>
+                  <td class="align_left">
+                    <code class="tt">grep -i &lt;string&gt; &lt;file&gt;</code>
+                  </td>
+                  <td class="align_left">
+                    <font dir="auto" style="vertical-align: inherit"
+                      ><font dir="auto" style="vertical-align: inherit"
+                        >Rechercher sans tenir compte de la casse</font
+                      ></font
+                    >
+                  </td>
+                  <td class="align_left"><code>$ grep -i foo bar.txt</code></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="fig">Tableau 1 : Un exemple de tableau.</p>
+            <p class="lamda">
+              Vous trouverez plus d'informations sur la création de tableaux
+              avec Softcover dans « Tabulaires et tableaux » dans The Softcover
+              Book .
+            </p>
+
+            <h3>Boîtes à part</h3>
+            <p class="lamda">
+              Une astuce facultative mais utile consiste à utiliser des encadrés
+              pour les discussions suffisamment importantes pour être incluses
+              dans le document, mais trop étendues ou tangentielles pour être
+              incluses dans le corps principal du récit.Par exemple, l’encadré 1
+              contient un aparté sur le concept de flux .L’un des avantages des
+              zones latérales (par opposition aux zones d’appel simplement
+              ombrées) est qu’elles peuvent être référencées ultérieurement,
+              comme décrit dans l’encadré 3 .
+            </p>
+            <p class="lamda">
+              Je trouve généralement que les cases latérales apparaissent
+              naturellement comme des stubs (espaces réservés temporaires) à
+              l'étape de démontage ( section 3.2 ) et sont ensuite remplies
+              pendant l'exposition principale ( section 3.3 ) et les passes de
+              polissage ( section 3.4 ), mais votre kilométrage peut varier .
+            </p>
+
+            <h2 id="quatorze">4.2 Style d'écriture</h2>
+            <p class="lamda">
+              Chaque auteur a une voix : la syntaxe, le style, les types
+              d'exemples, etc. uniques qui caractérisent l'écriture de cet
+              auteur.Sur la base de mon expérience dans la rédaction de
+              tutoriels, je peux proposer quelques suggestions pour développer
+              un style personnel propice à un enseignement efficace.
+            </p>
+            <p class="lamda">
+              Ma suggestion générale est de maintenir un ton uniforme et
+              pédagogique lors de la rédaction d’un tutoriel narratif.Il existe
+              cependant une marge de variation et le ton particulier doit être
+              adapté au type de document.Par exemple, le didacticiel ruby on
+              Rails , qui enseigne un sujet difficile (le développement Web) à
+              un large public, est écrit exclusivement sur un ton amical et
+              serviable, tandis que le Manifeste Tau est écrit sur un ton plus
+              agressif et polémique , approprié à son rôle d'attaque contre le
+              nombre .π
+            </p>
+            <p class="lamda">
+              L’un des avantages du maintien d’un ton neutre est qu’il permet
+              d’y ajouter facilement un brin d’ humour pince-sans -rire de temps
+              en temps .Par exemple, de nombreuses légendes de figures dans ce
+              didacticiel (comme la Figure 10 et la Figure 16 ) sont de nature
+              humoristique, et une grande partie de l’humour provient du
+              contraste avec le reste du contenu.Ce genre d'humour ne fonctionne
+              que lorsqu'il est l'exception et non la règle : une erreur
+              courante des débutants est de prendre à la légère pratiquement
+              tout , ce qui peut être extrêmement frustrant pour le
+              lecteur.Lorsque vous êtes aux prises avec un sujet difficile, la
+              dernière chose que vous voulez est un tutoriel qui fait une blague
+              toutes les deux phrases.
+            </p>
+            <p class="lamda">
+              N’ayez pas peur de montrer un peu de personnalité dans votre
+              écriture, mais ne laissez pas cela submerger l’objectif
+              pédagogique du document.La responsabilité de l’auteur du tutoriel
+              est de transmettre des informations utiles.Il est bienvenu de
+              divertir le lecteur dans la mesure où cela contribue à cet
+              objectif, mais (dans le contexte d’un document pédagogique) un tel
+              divertissement n’est pas une fin en soi.
+            </p>
+
+            <h2 id="quinze">4.3 Navigation et édition de texte</h2>
+            <p class="lamda">
+              L’un des défis lors de la rédaction de tutoriels narratifs est de
+              naviguer et de modifier des fichiers texte potentiellement
+              volumineux.Par exemple, au moment de la rédaction de cet article,
+              le didacticiel ruby compte plus de 157 000 mots.D'après mon
+              expérience, il est préférable de se repérer dans des documents
+              aussi volumineux en utilisant la fonction de recherche de votre
+              éditeur de texte.Je peux généralement me souvenir de quelques mots
+              liés au sujet que je souhaite trouver, donc je vais Cmd-Fdans mon
+              éditeur et je tape un mot ou deux pour trouver l'endroit pertinent
+              dans la source.
+            </p>
+            <p class="lamda">
+              Cette astuce de recherche d'un mot est particulièrement utile lors
+              de l'édition du document à l'aide d'un format de sortie tel que
+              PDF ou HTML.Par exemple, lors de la visualisation de ce
+              didacticiel à l'aide de l'aperçu HTML de Softcover, j'ai remarqué
+              que la sortie de la section 4.2 affichait au lieu de , comme le
+              montre la figure 17 .p i π Voulant trouver l’endroit correspondant
+              dans le document source, j’ai cherché un mot ou une combinaison de
+              mots susceptible d’être unique, et je me suis arrêté sur «
+              polémique ».Une recherche rapide de ce mot a donné le bon
+              emplacement ( Figure 18 ) et m'a permis d'effectuer la correction
+              souhaitée (en passant $pi$à $\pi$), comme le montre la Figure 19
+              .(D'ailleurs, vous remarquerez peut-être que, depuis que j'ai pris
+              les captures d'écran, le texte de ce document a divergé du texte
+              affiché dans la Figure 19 .Ceci est le résultat des deuxième et
+              troisième passes de polissage ( Section 3.4 ).)
+            </p>
+
+            <p class="cycle spec"><img src="/ressources/tut14.png" alt="" /></p>
+            <p class="fig">
+              Figure 17 : Détection d’une erreur dans l’aperçu HTML.
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut15.png" alt="" /></p>
+            <p class="fig">
+              Figure 18 : Recherche de l’erreur de la figure 17 dans la source
+              du document.
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut16.png" alt="" /></p>
+            <p class="fig">
+              Figure 19 : Correction de l’erreur de la figure 17 .
+            </p>
+
+            <h3>À faire</h3>
+            <p class="lamda">
+              Une autre astuce utile consiste à ajouter des « tâches à faire »
+              au document lorsque vous pensez à quelque chose à ajouter mais que
+              vous ne voulez pas prendre le temps d'écrire le contenu complet à
+              ce moment-là.Ma technique préférée est d’utiliser des « étoiles
+              triples » (trois astérisques) suivies d’une brève note à moi-même
+              concernant le matériel à ajouter.Par exemple, ce paragraphe
+              lui-même était un ajout « triple étoile » et ressemblait à
+              l’origine à ceci :
+            </p>
+            <p class="cod">***étoiles triples</p>
+            <p class="lamda">
+              Le principal avantage de l'utilisation d'étoiles triples est
+              qu'elles ***apparaissent rarement dans un autre contexte, il est
+              donc facile de les trouver en utilisant la fonction de recherche
+              d'un éditeur de texte, ce qui permet à son tour de les développer
+              facilement lors de l'une des passes de polissage ( Section 3.4 ).
+              Remarque : les étoiles triples fonctionnent bien dans L A T E X ,
+              mais dans Markdown, le caractère astérisque est en italique . Dans
+              ce cas, je recommande donc « triple plus » (par exemple, +++add
+              note about triple stars/triple plus technique).
+            </p>
+
+            <h3>Deux vitres</h3>
+            <p class="lamda">
+              Enfin, un complément utile à la recherche et à l’édition est
+              l’utilisation de deux volets distincts, ce qui devrait être
+              réalisable dans tout bon éditeur de texte.Lorsque vous effectuez
+              une recherche dans le document pour une raison quelconque (pour
+              corriger une erreur, rechercher une étiquette pour une référence
+              croisée, trouver une chaîne particulière, etc.), il est
+              généralement gênant de déplacer le curseur et donc de perdre notre
+              place.Dans ce contexte, il est utile d'avoir le même fichier
+              ouvert dans deux volets d'éditeur de texte différents, comme
+              illustré dans la Figure 20 .De cette façon, nous pouvons utiliser
+              un volet comme zone d’écriture principale et l’autre volet comme
+              une sorte de fenêtre « d’accès aléatoire » pour se déplacer et
+              rechercher dans le document.Ce n'est pas une technique
+              essentielle, mais l'expérience montre qu'elle est
+              extraordinairement utile, notamment lors de l'exposition
+              principale ( Section 3.3 ) et des passes de polissage ( Section
+              3.4 ).
+            </p>
+            <p class="cycle spec"><img src="/ressources/tut17.png" alt="" /></p>
+            <p class="fig">
+              Figure 20 : Ouverture du même fichier dans deux volets différents.
+            </p>
+            <h2 id="seize">5 Conclusion</h2>
+            <p class="lamda">
+              Rédiger des tutoriels narratifs est un défi, mais peut être très
+              enrichissant.Avec beaucoup de travail et un peu de chance, vous
+              pourriez obtenir des tweets comme celui illustré dans la figure 21
+              .Avec un peu de chance, vous pourriez même obtenir une
+              recommandation comme celle illustrée dans la figure 22 .Même si je
+              suis partisan du fait d'être payé pour votre travail, et que le
+              didacticiel ruby est en effet une entreprise de produits à succès,
+              en fin de compte, savoir que vous avez aidé des gens à acquérir
+              une compétence difficile et précieuse est la meilleure
+              récompense.(Certes, financer un voyage occasionnel en Polynésie
+              française ( Figure 14 ) n'est pas mal non plus.)
+            </p>
+            <p class="lamda">
+              En tant que créateur de tutoriels en herbe, vous devrez finalement
+              développer des techniques adaptées à votre style et à vos
+              objectifs particuliers, mais j'espère que ce méta-tutoriel vous
+              donnera une bonne longueur d'avance.En suivant les principes
+              généraux de motivation et de structure , en incorporant des
+              techniques telles que le report du contenu ( section 2.1 ),
+              l'utilisation d'exemples concrets ( section 2.2 ) et
+              l'exploitation du pouvoir de la répétition ( section 2.3 ), vous
+              serez en mesure de produire un récit engageant et instructif.En
+              suivant les étapes de raffinement successif ( Section 3 ) —
+              association libre, présentation du contenu, exposition principale,
+              passes de polissage et expédition — vous créerez et expédierez un
+              didacticiel narratif informatif et utile.Enfin, en appliquant
+              quelques astuces du métier ( Section 4 ), vous allégerez votre
+              fardeau d'auteur tout en animant la présentation, gardant ainsi
+              l'intérêt du lecteur tout en l'instruisant avec grâce et
+              efficacité.
+            </p>
+            <p class="lamda">
+              Rédiger un tutoriel de qualité est rarement facile, mais les
+              résultats peuvent être profondément satisfaisants.Bonne chance!
+            </p>
+            <button class="btn">Bonne chance 💪💪💪</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a href="#home" id="home" class="scroll-up-btn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,510 @@
+/*on importe plusieurs police google*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400i|Cormorant:400,700|Overpass');
+
+/*police de body sur les trois exercices*/
+@font-face {
+	font-family: "Arvo";
+	src: url("fonts/Arvo/Arvo-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*polices premier exercice*/
+@font-face {
+	font-family: "Cabin_Sketch";
+	src: url("fonts/Cabin_Sketch/CabinSketch-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Cagliostro";
+	src: url("fonts/Cagliostro/Cagliostro-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url("fonts/Comfortaa/Comfortaa-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*fin police exo 1*/
+
+
+/*polices deuxième exercice*/
+@font-face {
+	font-family: "Dosis";
+	src: url("fonts/Dosis/Dosis-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Exo_2";
+	src: url("fonts/Exo_2/Exo_2-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Exo_2";
+	src: url("fonts/Exo_2/Exo_2-italic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("fonts/Inconsolata/Inconsolata-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("fonts/Inconsolata/Inconsolata-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+/*fin polices deuxième exercice*/
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Arvo", serif;
+	background: linear-gradient(to bottom, #E7E3CF .1em, transparent .1em);
+	background-size: 100% 1.285714285714286em;
+	font-size: 14px;
+	line-height: 18px;
+	/* margin: 5px auto; */
+
+}
+
+.wrapper {
+	width: 1300px;
+	margin: 0px auto;
+}
+
+header {
+
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.logo a i{
+	font-size: xx-large;
+	margin-left: 15px;
+}
+
+.main-nav>.item-menu {
+	float: left;
+	width: 150px;
+}
+
+.main-nav>li>a {
+	display: block;
+	font-weight: bold;
+	line-height: 50px;
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+	text-shadow: 0 1px 1px #fff;
+	border-left: 1px solid #fff;
+	text-align: center;
+	border-right: 1px solid #000;
+	background: #ccebee;
+	;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.main-nav>li>.panneau {
+	background: #5a7c99;
+	width: 479px;
+	position: absolute;
+	border-radius: 0 0 20px 20px;
+	margin-left: 1px;
+	display: none;
+	padding: 0px 0px 10px;
+	text-align: center;
+}
+
+.main-nav:hover .item-menu:hover {
+	width: 480px;
+	/*afin que li est la même largeur que le panneau au survol*/
+}
+
+.main-nav:hover>.item-menu {
+	width: 90px;
+	/*largeur des autres li */
+}
+
+.main-nav>li:hover>.panneau {
+	display: block;
+}
+
+.panneau dl {
+	display: inline-block;
+	width: 25%;
+	padding: 30px;
+	margin: 20px 5px;
+	font-weight: bold;
+	line-height: 25px;
+	border: 1px solid #ededed;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.panneau dt {
+	font-size: 1.2em;
+	border-bottom: 1px dotted #ccebee;
+	color: #ccebee;
+	padding-bottom: 5px;
+}
+
+.panneau dd a {
+	display: block;
+	color: #fff;
+	font-size: 0.8em;
+	line-height: 25px;
+	text-decoration: none;
+}
+
+.panneau dd a:hover {
+	color: #fff;
+	background: rgba(162, 188, 206, 0.3);
+	border-radius: 30px;
+}
+
+.panneau img {
+	max-width: 100%;
+}
+
+.panneau figcaption {
+	color: #ededed;
+	font-style: italic;
+	line-height: 20px;
+	font-size: 0.8em;
+	padding: 0px 20px 10px 20px;
+}
+
+/************* submenu ************************/
+.main-menu {
+	text-align: center;
+}
+
+.main-menu li {
+	display: inline-block;
+}
+
+.main-menu a {
+	color: #ededed;
+	display: block;
+	font-size: 1.5em;
+	padding: 0.5em 1em;
+	text-shadow: 2px 2px 2px #222;
+	border-radius: 5px;
+	background: red;
+
+}
+
+.main-menu li:first-child a {
+	border-radius: 20px 5px 5px 40px;
+}
+
+.main-menu li:last-child a {
+	border-radius: 5px 40px 20px 5px;
+}
+
+.main-menu a:hover {
+	color: #333;
+	text-shadow: -03px -3px 2px rgb(239, 245, 238);
+	background: linear-gradient(to bottom, #ddd 0%, #aaa 50%, #ddd 100%);
+}
+
+/********générique**************/
+h1,.bordel {
+	width: 100%;
+	font-family: "Cabin_Sketch", sans-serif;
+	font-size: 4em;
+	text-align: center;
+	margin: 20px 0;
+}
+.span-bordel{
+	font-weight: bold;
+}
+
+h2 {
+	background-color: #ccebee;
+	text-align: center;
+	margin-bottom: 20px;
+	width: 60%;
+	cursor: pointer;
+}
+
+h3 {
+
+	margin: 15px;
+	outline: 10px dashed #ccebee;	
+	outline-offset: -6px;
+	border: 6px solid #ccebee;
+	
+}
+/*..........main.........*/
+main {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+
+}
+
+/********* video********/
+
+.container-video {
+	text-align: center;
+	margin-bottom: 25px;
+   
+    
+}
+#mute {
+    color: #000;
+    margin: 0 12px;
+	border:50%;
+	font-size: 16px bolder;
+
+}
+#play-pause img {
+    width: 30px;
+    position: relative;
+    top: 5px;
+	background-color: #1877f2;
+}
+#fullscreen img {
+    width: 20px;
+	background-color: #1877f2;
+}
+
+.barre-orange {
+    height: 10px;
+    width: 50%;
+	margin: auto;
+    background: #000;
+    cursor: pointer;
+}
+.buttons {
+    padding: 5px 10px 10px;
+	
+}
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.juice {
+    width: 50%;
+	background-color: #80B0F7;
+}
+
+#fullscreen img {
+    width: 20px;
+} 
+
+/*****footer*****/
+
+footer {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ccebee;
+	height: 150px;
+	padding-top: 30px;
+	
+}
+
+footer p {
+	margin-bottom: 5px;
+	font-size: large;
+}
+
+footer ul {
+	width: 50px;
+}
+
+footer ul li {
+	margin-bottom: 5px;
+}
+
+.fa-facebook {
+	color: #1877f2;
+}
+
+.fa-twitter {
+	color: #80b0f7;
+}
+
+.fa-youtube {
+	color: red;
+}
+
+.fa-linkedin {
+	color: #1877f2;
+}
+
+.fa-instagram {
+	color: #c33d6f;
+}
+
+/********scroll*******/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	width: 10px;
+	background: #212529;
+	border-left: 0 solid white;
+	border-right: 0 solid white;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	background: #80b0f7;
+	width: 0;
+	height: 35%;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+/* section*/
+
+.title {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	outline: 10px dashed #ccebee;	
+	outline-offset: -6px;
+	border: 6px solid #ccebee;
+	margin: 20px auto;
+}
+
+ul li {
+	margin-bottom: 1px;
+} .section {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap row;
+	padding-left: 5px;
+
+}
+ 
+.section .card {
+	width: 25%;
+}
+ 
+.card {
+	width: 20%;
+	height: 200px;
+	overflow: auto;
+	margin-bottom: 20px;
+
+}
+
+
+.section {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap column;
+}
+ 
+.section .card {
+	text-align: center;
+}
+ 
+
+
+.section .title {
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.chapitre {
+	display: flex;
+	flex-flow: wrap row;
+
+}
+
+.chapitre-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: #708090;
+}
+
+.bg {
+	height: auto;
+	margin-top: 30px;
+}
+/* don */
+.donate{
+	outline: 10px dashed #49A6E9;	
+	  outline-offset: -6px;
+	  border: 6px solid #49A6E9;
+	background-color: #fff;
+	width: 60%;
+	margin: 15px auto;
+  }
+  .donate a{
+	color: blue;
+	font-weight: bold;
+  }
+
+/* button up */
+.scroll-up-btn {
+	width: 4rem;
+	height: 4rem;
+	background-color: #4C5FEC;
+	position: fixed;
+	bottom: 5rem;
+	right: 5rem;
+	border-radius: 50%;
+	font-size: 1.6rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.5s;
+}
+
+.scroll-up-btn:hover {
+	background-color: #5c8bef;
+	color: #980f0f;
+}
+.comment{
+	
+	font-size: large;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+

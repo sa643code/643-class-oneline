@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <link rel="icon" type="image/png" href="/ressources/logo-1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75303112de.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />    
+    <link rel="stylesheet" href="/css/gt.css">    
+    <title>Git-Github</title>
+ 
+</head>
+<body>
+    <header>
+        <nav>
+            <p
+            class="logo">
+            <a href="/index.html">Retour  Accueil</a>
+           </p>
+            <img src="/ressources/git.png" alt="logo">
+        </nav>
+    </header>
+   
+   
+    <hr><hr>
+        Bonjour à tous.
+
+Bienvenue à nouveau.
+
+Dans cette session, nous allons parler de la chronologie des commits.
+
+Dans le cours précédent, nous avons effectué quelques commits.
+
+Dans celui-ci, nous allons les approfondir, comprendre ce qui se passe en coulisses et comment cette
+
+séquence fonctionne.
+
+Ne vous inquiétez pas.
+
+Il s'agit d'un cours sur les concepts de base, dans lequel je discute simplement de différents points. <br>
+
+Tout d'abord, ces commits sont essentiellement des objets qui contiennent certaines informations.
+
+Ces informations peuvent concerner des modifications, des ajouts ou des suppressions.
+
+Il s'agit en fait d'une chronologie de toutes les modifications que nous avons effectuées.
+
+Ainsi, lorsque nous effectuons le premier commit,il s'agit essentiellement
+
+du commit parent, car avant cela, il n'y a rien.
+
+Celui-ci va contenir tous les types d'informations.
+
+Cela signifie qu'ici, il va contenir les informations relatives à la création de ce projet.
+
+on remarque un ID de commit.
+
+Il s'agit essentiellement d'un identifiant de hachage, qui est assez long.
+
+Ce sont les sept premiers caractères, Pour faciliter nos # differentes operations.
+
+Cela signifie donc que l'ensemble de ce commit est un objet qui contient des informations sur toutes les modifications apportées depuis la date précédente.
+
+Avant cela, il n'y a rien. 
+
+La première fois, le premier commit contiendra donc toutes les informations. <br> <br>
+
+Maintenant, lorsque nous parlons du prochain commit, 
+
+La prochaine étape consiste à ajout du texte a la page d'index.
+
+Ainsi, lorsque nous créons notre deuxième commit, nous conservons essentiellement toutes les nouvelles modifications, c'est-à-dire les modifications effectuées
+
+après notre premier commit.
+
+Dans le premier commit, nous avons dit : « OK, nous avons créé index.HTML ».
+
+Dans le deuxième commit, nous mentionnons toutes les modifications.
+
+Nous mentionnons donc la modification que nous avons apportée à notre index .
+
+De plus, cela est suivi  d'un identifiant de commit unique. <br> <br>
+
+Vous voyez maintenant cette flèche, vous voyez cette flèche en particulier. <br>
+
+Pourquoi ?
+<br>
+Parce que ce commit ne contient pas toutes les informations.
+
+Ce commit ne contient que les nouvelles modifications <br>
+
+pour obtenir les informations précédentes.
+
+Il est lié au commit précédent.
+
+C'est comme un pointeur.
+
+Nous sommes donc connectés à un commit précédent pour contenir toutes les autres informations.
+
+J'espère que vous avez compris l'idée.
+
+mais encore une fois ne vous inquiétez pas, nous allons en discuter encore et encore. <br>
+
+Maintenant.
+
+Nous avons créé un 3e commit dans lequel nous avons à nouveau mis à jour notre index.
+en ajoutant un titre de niveau 1
+
+
+Celui-ci va donc contenir les informations ou les modifications après le commit 2 et nous pouvons le suivre
+
+à l'aide d'un identifiant de commit unique.
+
+Et le plus important, c'est qu'il est connecté au commit 2.
+
+Donc, cet identifiant de commit ne contient que les informations relatives à l'ajout du titre de niveau 1 ds notre index.
+
+Il est connecté au précédent.
+
+Nous avons donc également des informations sur la mise à jour effectuer au commit 2.
+
+<br>
+
+
+
+
+De cette façon, chaque commit ne va pas stocker toutes les informations.
+
+Ils ne stockeront que c propres modifications.
+
+Sinon, imaginez que je parle d'un grand projet comme developper une app com Netflix, ou ils ont
+
+20 ou 30 000 commits, donc ils ne stockent pas tous les fichiers à chaque fois qu'on effectue un sauvegare mais juste les modifications.
+
+Par exemple, supposons que le commit initial que nous avons effectué était d'environ dix Mo pour le fichier initial de la page  index.html
+
+
+Le commit suivant ne fait pas dix Mo ni plus.
+
+Il ne contient que les informations relatives à la modification, donc il peut faire dix Ko, 20 Ko,
+
+30 Ko ou un ou deux Mo. Car après cela, quelle que soit la modification que nous avons effectuée, nous avons peut-être simplement ajouté ou modifié
+
+un fichier, donc cela peut faire dix Ko, ou nous avons peut-être simplement modifié une ligne de code.
+
+Il s'agira donc d'une petite modification.
+
+
+donc si on change une lettre ou peut-être un fichier, 10 000 lignes de code, 5 000 lignes de code.
+
+En conséquence, la modification ne contiendra que ces informations.
+
+Cela peut donc représenter 100 Ko, voire plus. <br>
+
+Tous ces exemples pour montrer que chaque commit ne stocke pas l'intégralité du code, d'une certaine manière, nous continuons simplement à
+
+stocker toutes les modifications et comme toutes les modifications
+
+sont reliées entre elles dans un ordre séquentiel,
+
+nous disposons de toutes les informations.
+
+J'espère que vous comprenez l'idée. <br> <br>
+
+Maintenant, l'autre élément est cette flèche.
+
+Le but de cette flèche est de créer un pointeur ou de vous montrer que cette comite est connectée à la précédente.
+
+
+
+Il est possible que vous me voyiez  ou un autre instructeur ou un diagramme en ligne vous montrer cela.
+
+C'est également correct.
+
+Il est possible que nous suivions simplement une habitude pour vous montrer que, d'accord, voici la première comite,
+
+puis la deuxième, puis la troisième.
+
+Pour être honnête, la flèche ne signifie rien.
+
+Assurez-vous simplement qu'il s'agit d'un pointeur qui est connecté.
+
+Vous verrez également des diagrammes dans lesquels les éléments sont reliés de cette manière.
+
+Et ils n'ont pas de flèche.
+
+Ne vous inquiétez donc pas si vous voyez cela, cela signifie que ce sera la première, la deuxième et la troisième comète etc...
+
+cela montre que chaque commit est  connecté à la précédente
+
+Nous dessinons généralement des flèches juste pour vous montrer.
+
+Bon,  avançons.
+
+Ne vous inquiétez pas pour tout cela.
+
+Ils sont tous connectés dans un ordre séquentiel.
+
+J'espère que vous avez compris maintenant comment fonctionne la chronologie des commits et que chaque commit ne contient pas toutes les informations.
+
+Ils contiennent simplement les modifications. <br><br>
+
+Maintenant, laissez-moi vous parler de l'exemple pratique lui-même, uniquement de ces commits.
+
+Si je passe ici, voici le premier commit que nous avons effectué.
+
+Si j'ouvre ce commit, vous voyez que nous avons l'ID de hachage c300fdd
+
+
+Il s'agit des sept premiers caractères, comme je l'ai mentionné.
+
+
+ils nous aident donc à déterminer qu'il s'agit bien du commit que nous suivons et à faciliter nos # opérations.
+
+Sinon, si je devais travailler avec l'ID complet à chaque fois, ce serait un peu compliqué à gérer,
+
+pour être honnête. et le but d'apprendre git c'est pas de trebucher avec nos pantouffles mais de simplifier la marche
+
+Il est plus facile de suivre les sept premiers caractères que de travailler avec le hachage complet. <br>
+
+exemple git show xxxxxxx <br> <br>
+
+Si vous remarquez également que nous n'avons aucun parent, cela signifie qu'il s'agit du premier commit.
+
+Cela signifie donc qu'il n'y a pas de parent.
+
+
+dans le commit suivant,un parent est toujours attaché.
+
+Cela signifie donc que celui-ci est le parent et celui-ci est l'enfant.
+
+L'enfant contient donc les nouvelles différences, les nouvelles informations et il est également lié au parent.
+
+
+Si vous observez bien, ils ne montrent même pas le code entier, ils montrent juste le changement, c'est-à-dire
+
+la suppression et l'ajout.
+
+J'espère que vous avez compris l'idée.
+
+
+cool.
+
+C'est ainsi que toute la séquence est suivie et qu'ils contiennent tous de nouvelles modifications.
+
+En gros, ils prennent un instantané de toutes les nouvelles modifications.
+
+ce qui est Génial.
+
+J'espère que vous avez compris le principe.
+
+C'est pourquoi ils sont dans un ordre séquentiel : premier, deuxième, troisième et quatrième.
+
+Et si nous effectuons d'autres commits à l'avenir.
+
+Peut-être que nous mettrons à jour notre index ou ajouterons une nouvelle page de contact ou autre chose ?
+
+Ce que nous allons faire, c'est simplement connecter un nouveau commit qui pointera  ici.
+
+Nous aurons le nouveau commit et il aura son propre ID de commit unique.
+
+Nous pouvons ajouter un message, puis nous arriverons ici.
+
+Il contiendra toutes les nouvelles modifications. <br> <br>
+
+
+
+De plus, une chose importante que vous devez retenir est que chaque fois que nous effectuons un nouveau commit, nous atteignons 
+
+cette position particulière.
+
+
+Vous entendrez donc le terme « tête ».
+
+La tête correspond essentiellement à la position actuelle.
+
+Donc, si je fais un nouveau commit, je vais amener cette tête à cette position du nouveau commit.
+
+Maintenant, si je déplace ma tête n'importe où, ce que nous allons faire dans les prochains cours, j'atteindrai cette
+
+position particulière.
+
+Donc, si je déplace ma tête ici, peut-être vers cet ID de commit particulier, si je déplace ma tête ici, cela signifie que
+
+j'atteindrai ce commit particulier et que tout mon environnement ressemblera à ce que nous avions à cette
+
+position particulière, vous vous souvenez ?
+
+Donc, si je déplace ma tête vers cet ID de commit particulier, j'aurai notre index.HTML, c'est tout.
+
+Nous n'aurons rien d'autre.
+
+Tout le reste ne sera pas visible parce que ma tête est ici.
+
+La tête signifie essentiellement votre position actuelle.
+
+
+J'espère que vous comprenez maintenant comment fonctionne l'ensemble de la chronologie des Commit et ce qui se passe réellement en coulisses grâce a cette chronologie. <br> <br>
+
+Maintenant, un autre point que je tiens à mentionner spécifiquement est que tout ce que nous faisons actuellement
+
+se trouve dans le référentiel local.
+
+Cela signifie donc que tout ce que nous faisons est stocké dans le référentiel local.
+
+Mais dès que nous poussons vers le référentiel en ligne ou le référentiel distant, nous copions simplement tout tel quel
+
+.
+
+Donc, quand nous parlons de pousser, nous poussons toutes les informations.
+
+Donc, maintenant, quand nous disons que j'ai poussé toutes les modifications vers le référentiel en ligne ou distant, cela signifie que mon
+
+référentiel distant contient désormais toutes ces informations.
+
+Il est donc important que vous compreniez qu'il existe une chronologie que nous suivons localement.
+
+Et lorsque nous disons que nous poussons vers le référentiel en ligne ou le référentiel distant, nous envoyons simplement les informations exactes
+
+et c'est ce que nous allons faire dans la prochaine étape, où vous comprendrez comment envoyer toutes ces
+
+informations vers GitHub, Bitbucket ou tout autre référentiel distant.
+
+Assurez-vous donc de bien comprendre que nous envoyons ou copions simplement ces informations du local vers le online.
+
+<br><br>
+
+Bon supposons, au départ, mon projet fait 10 Mo.
+
+La première fois que j'ai tout créé, j'ai ajouté toutes les images, j'ai tout fait.
+
+J'ai donc peut-être poussé vers mon référentiel distant.
+
+Il fait donc dix Mo, car il peut y avoir quelques images, quelques vidéos, il peut faire 100 Mo ou n'importe quelle autre taille.
+
+Mais je tiens juste à mentionner qu'il fait dix Mo. Maintenant, lorsque je le transfère la fois suivante, lorsque j'envoie des informations
+
+la fois suivante, je n'envoie pas à nouveau ces dix Mo, j'envoie uniquement la taille réelle des modifications et pas les 10 mo.
+
+C'est la raison pour laquelle nous ne stockons que les modifications, afin de ne pas avoir à envoyer ces informations encore et encore.
+
+Car toutes les informations précédentes sont déjà copiées.
+
+inutile de les copier encore et encore ce qui favorise un gain de stock et une vitesse dans l'éxécution des taches
+
+ En général, les images sont stockées différemment, mais je voulais juste vous donner une idée du fait que nous envoyons uniquement
+
+les modifications. <br>
+
+Sinon, imaginez devoir envoyer tous les fichiers encore et encore ou stocker tous les fichiers encore et encore.
+
+Cela poserait un problème pour nous localement, imaginez les serveurs distants qui devraient les stocker
+
+encore et encore ces milliards de modifications de millions de developpeurs du monde entier, ces serveurs vont devenirs completement mabouls.
+
+Raison pour laquelle  nous stockons simplement les différences. <br> <br>
+
+L'autre chose concerne les différentes chronologies.
+
+Actuellement, nous travaillons avec la branche principale, qui est notre univers principal, mais nous pouvons créer plusieurs
+
+autres branches, ce que nous ferons à l'avenir.
+
+Elles auront donc quelque chose qui leur est propre.
+
+Elles créeront leur propre chronologie, où elles auront leur propre commit .
+
+Cela signifie que celle-ci est la principale.
+
+Nous pouvons créer une chronologie secondaire, nous pouvons créer une autre chronologie, voire plusieurs autres, et cela dépend entièrement
+
+de nous du nombre de branches avec lesquelles nous voulons travailler.
+
+le projet a l'instar est un arbre avec c nombreuses ramifications
+
+Par exemple, certains grands projets comportent 50 ou 100 branches.
+
+Elles fonctionnent donc toutes séparément.
+
+Nous approfondirons ce sujet plus tard.
+
+Mais j'espère que vous avez compris l'idée, l'idée de base, comment les choses fonctionnent en coulisses.
+
+J'espère que cette leçon vous a été utile.
+
+Ne vous inquiétez surtout pas, ne vous stressez pas.
+
+Je voulais juste vous donner un aperçu des coulisses, comment les choses fonctionnent avec tout ce qui concerne les commits.
+
+Nous allons approfondir le sujet avec des exemples pratiques afin que vous puissiez facilement comprendre.
+
+Merci de m'avoir suivi et à bientôt pour la prochaine leçon.
+
+
+    </p> 
+    <a href="#home" id="home" class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+   <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+   margin: auto;
+
+   max-width: 768px;
+
+}
+
+pre{
+    background-color: #18181b;
+overflow-x: auto;
+font-weight: 400;
+color: kananateblue;
+text-align: center;
+
+margin: auto;
+padding-top: 20px;
+padding-bottom: 10px;
+width: 70%;
+height: 60%;
+}
+ol{
+    text-align: center;
+}
+p, h3, h2{
+    text-align: center;
+}
+img{
+    width: 70%;
+}
+code{  
+border-radius: .25rem;
+font-weight: 400!important;
+padding: .25rem;
+--tw-text-opacity: 1;
+color: rgba(0,0,0,var(--tw-text-opacity));
+font-size: 80%;
+background: #f0efed;
+
+}
+.lang-plaintext{
+background-color: #18181B;
+color: #f0efed;
+
+}
+.logo{
+width: 100%;
+
+
+}
+/*******************button up********************/
+.scroll-up-btn {
+width: 4rem;
+height: 4rem;
+background-color: #4C5FEC;
+position: fixed;
+bottom: 5rem;
+right: 5rem;
+border-radius: 50%;
+font-size: 1.6rem;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: background-color 0.5s;
+}
+
+.scroll-up-btn:hover {
+background-color: #5c8bef;
+color: #980f0f;
+}
+
+/********scroll*******/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	width: 10px;
+	background: #212529;
+	border-left: 0 solid white;
+	border-right: 0 solid white;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	background: #80b0f7;
+	width: 0;
+	height: 35%;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
