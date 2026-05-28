@@ -1,400 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/ressources/logo-1.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/75303112de.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-    <title>Environnement de Dev.</title>    
-    <link rel="stylesheet" href="/css/type.css">
-</head>
-<body>
-    
-    <header>        
-        <nav>
-        <ul
-            class="logo">
-            <li><a href="/index.html"><img src="/ressources/logo-1.png" width="50" alt=""></a></li>
-        </ul>
-        <ul
-        class="logo">
-        <li><a href="#chap0">Avant Propos</a></li>
-        </ul>
-         <ul>
-            <li class="title-item"><a href="#un">Environnement de développement</a></li>
-            <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#deux">1 Options d'environnement de développement</a></li>
-                <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#trois">2 IDE Cloud</a></li>
-                <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#quatre">3 Configuration native du système d'exploitation</a></li>
-                <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#cinq">3.1 macOS</a></li>
-                <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#six">3.2 Linux</a></li>
-                <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#sept">3.3 Windows</a></li>
-                <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#huit">4 Conclusion</a></li>
-        </ul>
-       
-        </nav>
-    </header>
-    <main>
-        <!-- A propos -->     
-        <section>
-         <div class="container-video">
-             <h1>Environnement de Dev.</h1>
-             <video src="/ressources/video.mp4" class="video"></video>
-     
-             <div class="controls">
-                 <div class="barre-orange">
-                     <div class="juice"></div>
-                 </div>
-     
-                 <div class="buttons">
-                     <button id="play-pause">
-                         <img src="/ressources/play.svg">
-                     </button>
-                     <button id="mute">Mute</button>
-                     <input type="range" id="volume-slider" min="0" max="100" value="50" step="1">
-                     <button id="fullscreen">
-                         <img src="/ressources/fullscreen.svg">
-                     </button>
-                 </div>
-             </div>
-     
-         </div>
-     
-         <div class="contenu">
-             <div class="intro">
-                 
-                 <h2 id="chap0"> QUI SUIS-JE ?</h2>
 
-                <p class="lamda">
-                    ABDOULAYE DIALLO est un développeur de logiciels passionné par l'enseignement. <br> Fondateur de 643-code et bien d'autres start-ups, je travaille sur des projets personnels et en tant que freelance.<br>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/ressources/logo-1.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/75303112de.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+        <title>Environnement de Dev.</title>
+        <link rel="stylesheet" href="/css/type.css">
+    </head>
 
-                    ABDOULAYE DIALLO enseigne la programmation et le marketing à de nombreux étudiants en ligne et hors ligne en tant que formateur. <br>
-                    
-                    ABDOULAYE DIALLO maîtrise l'art d'expliquer des sujets très complexes de la manière la plus simple possible, facile à comprendre et à suivre. Mes cours vidéos peuvent également utilisés par des entreprises pour former leurs employés et par des universités pour préparer leurs étudiants et améliorer leurs compétences en fonction des exigences du secteur.
-                    
-                    
-                  
-                </p>
+    <body>
 
-                <button class="btn">Commencer: le chapitre</button>
-                
-             </div>
-             
-         </div>
- 
-     
-        </section>
-        <!-- 1 -->            
-                
-        <section>            
-         <div class="container-video">
-          
-             <video src="/ressources/video.mp4" class="video"></video>
-     
-             <div class="controls">
-                 <div class="barre-orange">
-                     <div class="juice"></div>
-                 </div>
-     
-                 <div class="buttons">
-                     <button id="play-pause">
-                         <img src="/ressources/play.svg">
-                     </button>
-                     <button id="mute">Mute</button>
-                     <input type="range" id="volume-slider" min="0" max="100" value="50" step="1">
-                     <button id="fullscreen">
-                         <img src="/ressources/fullscreen.svg">
-                     </button>
-                 </div>
-             </div>
-     
-         </div>
-     
-         <div class="contenu">
-             <div class="intro">
-                 <p class="lamda">L’une des tâches les plus importantes pour tout développeur en herbe, ou pour tout technicien en général, est de configurer son ordinateur comme environnement de développement , le rendant adapté au développement de sites Web, d’applications Web et d’autres logiciels. 643-code Dev Environment pour se perfectionner est conçu pour compléter la séquence principale 643-code et le didacticiel ruby en regroupant tout le matériel pertinent au même endroit.</p>
-                 <p class="lamda">Ce tutoriel couvre plusieurs options pour la configuration d'un environnement de développement, destiné aux lecteurs de différents niveaux d'expérience et de sophistication.Si vous finissez par utiliser l'option présentée dans la section  2 , il n'y a pas de prérequis minimum pour ce didacticiel autre que des connaissances informatiques générales.Si vous souhaitez suivre la configuration plus difficile de la section  3 (que nous recommandons à la plupart des lecteurs d'aborder à un moment donné), vous devez avoir une connaissance de base de la ligne de commande Unix (comme indiqué dansle tutorielde ligne de commande  ), et une connaissance des éditeurs de texte et de la configuration du système (comme indiqué dansle tutorield'éditeur de texte  ) est recommandée.</p>
-                 <p class="lamda">Des versions ebook de ce tutoriel sont disponibles gratuitement sur learnenough.com .</p>
-                <h2 id="un">1-Options d'environnement de développement</h2>
-                <p class="lamda">Dans ce tutoriel, nous nous concentrons sur l’installation ou l’activation des quatre outils fondamentaux de développement logiciel suivants ( Figure  1 ) :</p>
-                <ul>
-                    <li>1-Terminal de ligne de commande (« shell »)</li>
-                    <li>2-Éditeur de texte</li>
-                    <li>3-Contrôle de version (Git)</li>
-                    <li>4-Langages de programmation (ruby, etc.)</li>
+        <header>
+            <nav>
+                <ul class="logo">
+                    <li><a href="/index.html"><img src="/ressources/logo-1.png" width="50" alt=""></a></li>
                 </ul>
-                <p class="lamda">Pour plus d'informations sur ces différents types d'applications logicielles, consultezle tutorielde ligne de commande  ,le tutorield'éditeur de texte  ,le tutorielde Git  etle tutorielde ruby  .</p>
-
-                <p class="cycle spec"><img src="/ressources/v1.png" alt=""></p>
-                <p class="fig">Figure 1 : Éléments typiques d’un environnement de développement.</p>
-                <p class="lamda">Lors de la mise en place d'un environnement de développement, nous recommandons deux possibilités principales, classées par ordre croissant de difficulté :</p>
-                <ul>
-                    <li>IDE Cloud</li>
-                    <li>Système d'exploitation natif (macOS, Linux, Windows)</li>
+                <ul class="logo">
+                    <li><a href="#chap0">Avant Propos</a></li>
                 </ul>
-                <p class="lamda">Si vous êtes relativement inexpérimenté, nous vous recommandons de commencer par l'IDE cloud ( Section  2 ), car il présente le processus de configuration le moins difficile.</p>
-                 <h2 id="deux">Système natif</h2>
-                 <p class="lamda">Bien que l'option IDE soit idéale lorsque vous débutez, il est finalement important de pouvoir développer des logiciels sur votre système d'exploitation natif (OS).Malheureusement, la mise en place d’un environnement de développement natif entièrement fonctionnel peut être un processus difficile et frustrant 1 — laissant probablement de nombreuses occasions d’exercer votre sophistication technique ( Encadré  1 ) — mais c’est un rite de passage essentiel pour tout aspirant génie technique.</p>
-                 <p class="lamda">Afin de relever ce défi difficile, dans la section  3, nous discuterons de la configuration native du système d'exploitation pour macOS, Linux et Windows.</p>
-                <p class="comment">
-                    Encadré 1. Sophistication technique <br>
-                    La sophistication technique est la capacité à résoudre de manière autonome des problèmes techniques.Dans le cadre de l'installation d'un environnement de développement, cela signifie savoir rechercher sur Google le message d'erreur si whichque chose ne va pas, essayer de quitter et de redémarrer une application (comme le shell de ligne de commande) pour voir si cela résout les problèmes, etc.
-                    <br>
-                    Il peut y avoir tellement de choses qui peuvent mal se passer lors de la configuration d'un environnement de développement qu'il existe rarement une solution générale au problème. Il vous suffit de continuer à appliquer votre sophistication technique jusqu'à ce que tout fonctionne.Et si vous êtes coincé, ne vous inquiétez pas trop : à un moment ou à un autre, cela nous arrive à tous.
-                </p>
-                <h2 id="trois">2 IDE Cloud</h2>
-                <p class="lamda">L'option d'environnement de développement la plus simple est un IDE cloud , qui est un environnement de développement intégré dans le cloud auwhich vous accédez à l'aide du navigateur Web de votre choix.Bien que facile à activer, le système résultant est une machine de développement de qualité industrielle, pas un jouet.De plus, l'IDE cloud fonctionne automatiquement sur plusieurs plates-formes, car tout ce dont vous avez besoin est un navigateur Web ordinaire pour l'utiliser (ce que tous les principaux systèmes d'exploitation fournissent).</p>
-                <p class="lamda">Il existe plusieurs options commerciales pour exécuter un IDE cloud, et dans le cadre du développement du didacticiel ruby, nous nous sommes associés à Cloud9 (qui fait partie d'Amazon Web Services).L'environnement résultant est approprié au développement Web ruby et inclut bien entendu tous les éléments mentionnés dans la section  1 .En particulier, AWS Cloud9 est équipé d’un terminal de ligne de commande et d’un éditeur de texte (y compris un navigateur de système de fichiers), comme illustré dans la Figure  2 .Étant donné que chaque espace de travail Cloud9 fournit un système Linux entièrement fonctionnel, il inclut également automatiquement le système de contrôle de version Git, ainsi que ruby et plusieurs autres langages de programmation.</p>
-                <p class="cycle spec"><img src="/ressources/v2.png" alt=""></p>
-                <p class="fig">Figure 2 : L’anatomie de l’IDE ​​cloud.</p>
-                <p class="lamda">
-                    Voici les étapes à suivre pour démarrer avec l'environnement de développement cloud : <br>
-                     
+                <ul>
+                    <li class="title-item"><a href="#un">Environnement de développement</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#deux">1 Options d'environnement de
+                            développement</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#trois">2 IDE Cloud</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#quatre">3 Configuration native du
+                            système d'exploitation</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#cinq">3.1 macOS</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#six">3.2 Linux</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#sept">3.3 Windows</a></li>
+                    <li><i class="fa-solid fa-circle-chevron-right"></i><a href="#huit">4 Conclusion</a></li>
+                </ul>
 
-                    1-Étant donné que Cloud9 fait partie d'Amazon Web Services (AWS), si vous possédez déjà un compte AWS, vous pouvez simplement vous connecter . 3Pour créer un nouvel environnement d’espace de travail Cloud9, accédez à la console AWS et saisissez « Cloud9 » dans la zone de recherche.
-                    2-Si vous n'avez pas encore de compte AWS, vous devez créer un compte gratuit sur AWS Cloud9 . 4Afin d'éviter les abus, AWS exige une carte de crédit valide pour l'inscription, mais l'espace de travail est 100 % gratuit (pendant un an au moment de la rédaction de cet article) et votre carte ne sera pas débitée.Vous devrez peut-être attendre jusqu'à 24 heures pour que le compte soit activé, mais dans mon cas, il était prêt en une dizaine de minutes.
-                    3-Une fois que vous avez réussi à accéder à la page d'administration de Cloud9 ( Figure  3 ), continuez à cliquer sur « Créer un environnement » jusqu'à ce que vous vous retrouviez sur une page qui ressemble à la Figure  4 .Saisissez les informations comme indiqué, puis assurez-vous de choisir Ubuntu Server ( et non Amazon Linux) ( Figure  5 ).Enfin, continuez à cliquer sur les boutons de confirmation jusqu'à ce que Cloud9 commence à provisionner l'IDE ( Figure  6 ).Vous pouvez rencontrer un message d’avertissement concernant le fait d’être un utilisateur « root », que vous pouvez ignorer en toute sécurité à ce stade précoce.(Si vous vous en sentez capable, vous pouvez implémenter la méthode préférée, appelée utilisateur de gestion des identités et des accès (IAM), à ce stade.(Voir le chapitre 13 du didacticiel ruby pour plus d'informations.)
-                    4-Enfin, assurez-vous que vous utilisez une version à jour de Git ( Listing  1 ).
-                </p>
-                <p class="cycle spec"><img src="/ressources/v3.png" alt=""></p>
-                <p class="fig">Figure 3 : La page d’administration de Cloud9.</p>
-                <p class="cycle spec"><img src="/ressources/v4.png" alt=""></p>
-                <p class="fig">Figure 4 : Création d’un nouvel environnement de travail sur AWS Cloud9..</p>
-                <p class="cycle spec"><img src="/ressources/v5.png" alt=""></p>
-                <p class="fig">Figure 5 : Sélection du serveur Ubuntu .</p>
-                <p class="cycle spec"><img src="/ressources/v6.png" alt=""></p>
-                <p class="fig">Figure 6 : L’IDE cloud par défaut..</p>
-                <p class="lamda">Étant donné que l’utilisation de deux espaces pour l’indentation est une convention quasi universelle dans ruby, nous recommandons également de modifier l’éditeur pour utiliser deux espaces au lieu des quatre par défaut.Comme le montre la Figure  7 , vous pouvez le faire en cliquant sur l’icône d’engrenage en haut à droite, puis en modifiant le paramètre Soft Tabs sur 2.(Notez que cela prend effet immédiatement ; vous n'avez pas besoin de cliquer sur un bouton Enregistrer.)</p>
-                <p class="cycle spec"><img src="/ressources/v7.png" alt=""></p>
-                <p class="fig">Figure 7 : Configuration de Cloud9 pour utiliser deux espaces pour l’indentation.</p>
-                <p class="cod">
-                    Liste 1 : Mise à niveau de Git (si nécessaire). <br>
-                    $ git --version <br>
-                     # Si le numéro de version n'est pas supérieur à 2 .28.0, exécutez la commande suivante : <br>
-                     $ source < ( curl -sL https://cdn.learnenough.com/upgrade_git )
-                </p>
-                <p class="lamda">Il est également important d'utiliser une version compatible de Node.js :</p>
-                <p class="cod">
-                    $ nvm install 16 .13.0 <br>
-                    $ node -v <br>
-                    v16.13.0
-                </p>
-                <p class="lamda">Au moment de la rédaction de cet article, la version recommandée de ruby est ruby 3.1.2, que vous pouvez installer et utiliser sur l'IDE cloud comme suit :</p>
-                <p class="cod">
-                    $ rvm obtenir stable <br>
-                    $ rvm installer 3 .1.2 <br>
-                    $ rvm --default utiliser 3 .1.2
-                </p>
-                <p class="lamda">(Cela utilise ruby Version Manager , qui est préinstallé sur l'IDE cloud.) Une fois cette commande terminée, vous pouvez vérifier la version de ruby comme suit :</p>
-                <p class="cod">
-                    $ ruby ​​-v <br>
-                    ruby ​​3.1.2p20 (2022-04-12 révision 4491bb740a) [x86_64-linux]
-                </p>
-                <p class="lamda">
-                    (Les numéros de version exacts peuvent différer.)Si vous utilisez un didacticiel qui recommande une version différente de ruby, remplacez simplement 3.1.2 par la version spécifiée dans les commandes ci-dessus (par exemple, 2.7.5). <br>
-                    Pour installer Python, utilisez les commandes indiquées dans la liste  2 .
-                </p>
-                <p class="cod">
-                    Liste 2 : Installation de Python. <br>
-                    $ sudo add-apt-repository -y ppa:deadsnakes/ppa <br>
-                     $ sudo apt-get install -y python3.10 <br>
-                     $ sudo apt-get install -y python3.10-venv <br>
-                     $ sudo ln -sf /usr/bin/python3.10 /usr/bin/python3
-                </p>
-                <p class="lamda">Cela installe la version Python 3.10 et crée un lien symbolique vers python3pour plus de commodité.</p>
-                <p class="lamda">Cloud9 est livré avec plusieurs éditeurs de texte, tels que nanoet vim, et il est également pratique d'ajouter la c9commande pour ouvrir des fichiers à l'aide de l'éditeur visuel natif de Cloud9 :</p>
-            <p class="cod">$ npm install --location = global c9</p>
-            <p class="lamda">Enfin, certains utilisateurs de l'IDE cloud ont signalé des problèmes de dépassement des limites de taille. Je recommande donc d'exécuter la commande de la liste  3 si vous utilisez l'environnement de développement cloud.</p>
-            <p class="cod">
-                Liste 3 : Ajout de taille supplémentaire à l'IDE cloud. <br>
-                $ source < ( curl -sL https://cdn.learnenough.com/resize )
-            </p>
-            <p class="lamda">À ce stade, vous avez terminé !Bien qu'un accès Internet soit requis pour utiliser Cloud9, il n'existe aucune alternative combinant autant de puissance avec une configuration aussi simple.</p>
-            <h2 id="quatre">3-Configuration native du système d'exploitation</h2>
-            <p class="lamda">Comme mentionné dans la section  1 , la configuration de votre système d'exploitation natif en tant qu'environnement de développement peut être difficile, mais c'est une étape importante à franchir une fois que vous avez atteint un certain niveau de sophistication technique.L'option IDE cloud est un excellent point de départ, mais vous devrez éventuellement prendre le taureau par les cornes ( Figure  8 ) 5 et plier votre système natif à votre volonté.</p>
-            <p class="cycle spec"><img src="/ressources/v8.png" alt=""></p>
-            <p class="fig">Figure 8 : Parfois, il faut prendre le taureau par les cornes.</p>
-            <p class="lamda">La section  3.1 couvre la conversion de macOS en un environnement de développement entièrement équipé, tandis que la section  3.2 fait de même pour Linux.Nous couvrons les options Microsoft Windows dans la section  3.3 , mais (comme mentionné brièvement dans la section  1 ), cette section se réfère actuellement à l'option cloud IDE dans la section  2 .</p>
-            
-            <h2 id="cinq">3.1 macOS</h2>
-            <p class="lamda">Le système d'exploitation natif Macintosh, appelé à l'origine Mac OS X et désormais connu simplement sous le nom de macOS , dispose d'une interface utilisateur graphique (GUI) soignée tout en étant construit sur une base Unix solide.Par conséquent, macOS est parfaitement adapté à une utilisation comme environnement de développement pour un programmeur.</p>
-            <p class="lamda">Les étapes de cette section constituent plus qu'un simple système minimal ; vous pouvez en fait vous en sortir en faisant beaucoup moins, mais vos trois auteurs utilisent tous macOS eux-mêmes, et nous pensons qu'il est important de ne pas vous léser avec une configuration à moitié cuite.</p>
-             <h3>Terminal et éditeur</h3>
-             <p class="lamda">Bien que macOS soit livré avec un programme de terminal natif, nous vous recommandons d'installer iTerm , qui inclut diverses améliorations qui le rendent meilleur que la valeur par défaut pour les développeurs et autres utilisateurs techniques.</p>
-             <p class="lamda">Nous vous recommandons également d'installer un éditeur de texte de programmeur.Il existe de nombreux excellents choix, mais Sublime Text (abordé dans 643-code Text Editor pour se perfectionner ) est un bon point de départ si vous n'avez pas déjà de favori.</p>
-             <p class="lamda">Au fait, pour les tutoriels 643-code et le tutoriel Rails, il est généralement recommandé d'utiliser le shell Bourne-again (Bash) plutôt que le shell Z par défaut (même si cela n'a souvent pas d'importance).Pour passer votre shell à Bash, exécutez chsh -s /bin/bashla ligne de commande, entrez votre mot de passe et redémarrez votre programme de terminal.Tout message d’alerte résultant peut être ignoré en toute sécurité.Consultez l’article du blog 643-code « Utilisation de Z Shell sur Mac avec les didacticiels 643-code » pour plus d’informations.</p>
-            <h3>Outils de ligne de commande Xcode</h3>
-            <p class="lamda">Bien que basé sur Unix, macOS 6 n'est pas livré avec tous les logiciels nécessaires à un environnement de développement approprié.Afin de combler cette lacune, les utilisateurs de macOS doivent installer Xcode , une vaste suite d’outils de développement et de bibliothèques de code créée par Apple.</p>
-            <p class="lamda">Xcode nécessitait auparavant un téléchargement de plus de 4 Go de fichiers sources d'installation, mais heureusement, Apple a récemment rendu Xcode incroyablement rapide et facile à installer avec une simple commande en ligne de commande, comme indiqué dans la liste </p>
-            <p class="cod">
-                Liste 4 : Installation des outils de ligne de commande Xcode. <br>
-                $ xcode-select --install
-            </p>
-            <h3>Brassage maison</h3>
-            <p class="lamda">L'étape suivante est techniquement facultative, mais à notre avis, elle est nécessaire pour un environnement de développement macOS véritablement professionnel : à savoir, l'installation de l'excellent gestionnaire de paquets Homebrew .</p>
-            <p class="lamda">Vous pouvez considérer un gestionnaire de paquets comme un App Store qui s'exécute sur la ligne de commande et qui est rempli de logiciels open source gratuits.De nos jours, la plupart des distributions Linux sont livrées avec un gestionnaire de paquets natif ( Section  3.2 ), mais par défaut, macOS n'en a pas.Homebrew est l'un des nombreux gestionnaires disponibles dans la communauté open source, mais au fil du temps, il est devenu l'option la plus populaire parmi les développeurs macOS sérieux.</p>
-            <p class="lamda">Comme nous le verrons dans la section  3.1.5 , nous utiliserons un programme appelé rbenv pour installer ruby, qui à son tour sera installé via Homebrew dans la section  3.1.4 .Mais Homebrew lui-même nécessite ruby, il semble donc que nous soyons tombés sur une dépendance circulaire .Heureusement, macOS est livré avec un système ruby que nous pouvons utiliser pour démarrer l'installation.Nous utiliserons ce ruby par défaut pour installer Homebrew, puis nous installerons rbenv et des versions ruby supplémentaires comme indiqué ci-dessus.</p>
-            <p class="lamda">Le programme d'installation de Homebrew est un script Bash et peut être consulté à l'aide du curlprogramme décrit dansle tutorielde ligne de commande  .Nous pouvons exécuter le script d'installation de Homebrew en utilisant l' bashexécutable système, qui se trouve dans le /binrépertoire.La commande complète apparaît comme dans la liste  5 .</p>
-            
-            <p class="cod">Liste 5 : Installation du gestionnaire de paquets Homebrew. <br>
-                $ /bin/bash -c " $( curl -fsSL https://www.learnenough.com/homebrew.sh ) "</p>
-            <p class="lamda">Notez que la liste  5 utilise une URL de transfert learnenough.com, qui pointe vers le script d'installation Homebrew actuel.De cette façon, si Homebrew modifie l'URL utilisée pour héberger le script, nous pouvons simplement mettre à jour l'adresse de transfert et ce tutoriel continuera à fonctionner comme écrit.(Vous pouvez également simplement copier et coller la commande complète depuis la page d'accueil de Homebrew si vous le souhaitez.)</p>
-            <p class="lamda">Homebrew installe une brewcommande de ligne de commande utilisée pour installer, mettre à jour et supprimer des packages.Une fois l'installation de Homebrew terminée, c'est une bonne idée d'exécuter brew doctor, ce qui garantit que tous les répertoires et autorisations nécessaires à Homebrew pour gérer les fichiers locaux sont correctement configurés :</p>
-            <p class="cod">
-                docteur <br>
-                brasseur
-            </p>
-            <p class="lamda">Si vous rencontrez des problèmes à ce stade, vous devrez vous référer au wiki de dépannage de Homebrew , mais vous ne devriez vraiment pas le faire à moins que vous n'ayez apporté des modifications à des dossiers système et des autorisations aléatoires.</p>
+            </nav>
+        </header>
+        <main>
+            <!-- A propos -->
+            <section>
+                <div class="container-video">
+                    <h1>Environnement de Dev.</h1>
+                    <video src="/ressources/video.mp4" class="video"></video>
 
-             <h3>Environnement ruby (rbenv)</h3>
-             <p class="lamda">Comme nous venons de le voir, macOS est livré avec ruby préinstallé, mais nous n'avons aucun contrôle sur la version exacte, et macOS ne nous permet pas nativement d'utiliser plusieurs versions de ruby en parallèle.Pour nous donner plus de flexibilité avec notre environnement de développement, nous allons installer rbenv , qui est un utilitaire qui gère différentes versions de ruby et s'assure que les packages logiciels ruby (appelés gems ) sont placés au bon endroit pour que ruby les trouve.</p> <br>
-             <p class="lamda">L'utilisation de rbenv avec la commande ruby-build associée nous permet également de spécifier une version différente de ruby pour différents référentiels de projets, ce qui est une tâche courante dans le développement de logiciels .Par exemple, une ancienne version d’un programme peut nécessiter une ancienne version de ruby pour fonctionner correctement.L'utilisation de rbenv signifie que nous pouvons prendre en charge un programme aussi ancien tout en exécutant une version plus à jour de ruby pour nos autres projets.</p>
-             <p class="lamda">L'installation de rbenv est facile avec Homebrew.Nous pouvons installer à la fois rbenv et ruby-build en une seule étape en utilisant brew install rbenv, comme indiqué dans la liste  6 </p>
-             <p class="cod">Liste 6 : Installation de rbenv et ruby-build. <br>
-                $ brew install rbenv     # installe également automatiquement ruby-build</p>
-            <p class="lamda">Une fois l'installation de la liste  6 terminée, nous devons faire fonctionner rbenv en utilisant rbenv init, comme indiqué dans la liste  7 .</p>
-            <p class="lamda">Remarque : si vous utilisez Zsh à la place, remplacez- .zshrcle par .bash_profiledans cette section.Consultez « Utilisation de Z Shell sur Mac avec les didacticiels 643-code  » pour plus d’informations.</p>
+                    <div class="controls">
+                        <div class="barre-orange">
+                            <div class="juice"></div>
+                        </div>
 
-            <p class="cod">
-                Liste 7 : Initialisation de rbenv. <br>
-                $ rbenv init <br>
-                 # Chargez rbenv automatiquement en ajoutant <br>
-                 # ce qui suit à ~/.bash_profile ( ou ~/.zshrc si vous utilisez Zsh ) : <br>
-                
-                eval "$(rbenv init -)"
-            </p>
-            <p class="lamda">Si la liste  7 vous donne un message d’erreur tel que « Aucun fichier ou répertoire de ce type. », essayez de quitter votre programme shell avec Ctrl-D et de le redémarrer, puis réessayez la commande.(Ce type de technique de redémarrage et de nouvelle tentative est une sophistication technique classique ( Encadré  1 ).)</p>
-            <p class="lamda">Comme on le voit dans la liste  7 , l'exécution rbenv initnous donne une suggestion sur la façon d'éviter d'avoir à initialiser rbenv à la main à chaque fois : nous devons simplement ajouter la ligne</p>
-            <p class="cod">eval "$(rbenv init -)"</p>
-            <p class="lamda">à notre fichier de profil Bash .bash_profile(qui est abordé dans Apprendre à utiliser suffisamment l'éditeur de texte  ).</p>
-            <p class="lamda">Si vous préférez, vous pouvez utiliser un éditeur de texte pour ajouter la evalligne au fichier de votre système .bash_profile, mais le moyen le plus simple est d'utiliser echol'opérateur d'ajout  >> décrit dans Apprendre une ligne de commande suffisamment dangereuse , comme ceci :</p>
+                        <div class="buttons">
+                            <button id="play-pause">
+                                <img src="/ressources/play.svg">
+                            </button>
+                            <button id="mute">Mute</button>
+                            <input type="range" id="volume-slider" min="0" max="100" value="50" step="1">
+                            <button id="fullscreen">
+                                <img src="/ressources/fullscreen.svg">
+                            </button>
+                        </div>
+                    </div>
 
-            <p class="cod">$ echo  'eval "$(rbenv init -)"' >> ~/.bash_profile     # ou ~/.zshrc si vous utilisez Zsh</p>
-            <p class="lamda">Notez que nous avons inclus le répertoire personnel ~dans le chemin afin qu'il fonctionne which que soit le répertoire dans lewhich nous nous trouvons actuellement.</p>
-            <p class="lamda">Enfin, pour activer le nouveau fichier de profil, nous devons le faire source(comme mentionné dans 643-code Text Editor pour se perfectionner ) :</p>
-            <p class="cod">$ source ~/.bash_profile     # ou ~/.zshrc si vous utilisez Zsh</p>
-            <h3>Nouvelle version de ruby</h3>
-            <p class="lamda">Maintenant que rbenv est configuré, donnons-lui une version non système de ruby à gérer.Le processus d'installation est entièrement géré par rbenv, il vous suffit donc de lui indiquer la version que vous souhaitez sur votre système en lui transmettant le numéro de version exact de ruby.</p>
-            <p class="lamda">Nous utiliserons ruby 3.1.2 dans ce tutoriel, qui, au moment de la rédaction de cet article, fonctionne avec une grande variété d'applications ruby, mais vous pouvez également utiliser une version actuelle ou précédente comme indiqué sur le site Web de ruby.</p>
-            <p class="lamda">Pour installer la version souhaitée de ruby en utilisant rbenv, exécutez simplement la commande indiquée dans la liste  8 .Si votre système se plaint que la version ruby donnée n'est pas disponible, vous devrez mettre à jour votre système pour accéder à la dernière version ( Encadré  2 ).</p>
-            <p class="cod">Liste 8 : Installation d’une nouvelle copie de ruby. <br>
-                $ rbenv install 3 .1.2</p>
+                </div>
 
-            <p class="lamda">Après avoir exécuté la commande de la liste  8 , vous devriez voir rbenv démarrer le processus de téléchargement et installer toutes les dépendances nécessaires pour cette version spécifique de ruby (ce qui peut prendre un certain temps en fonction de la bande passante et des limitations du processeur).</p>
-            <p class="lamda">Remarque : vous pouvez recevoir un message d’erreur du formulaire</p>
-            <p class="cod">
-                ruby-build : définition introuvable : 3.1.2. <br>
+                <div class="contenu">
+                    <div class="intro">
 
-                Consultez toutes les versions disponibles avec « rbenv install --list ».  <br>
-                
-                Si la version souhaitée est manquante, essayez de mettre à jour ruby-build : <br>
-                
-                  brew update && brew upgrade ruby-build.
-            </p>
-            <p class="lamda">Si cela se produit, vous devez cloner la ruby-buildliste la plus récente dans le pluginsrépertoire rbenv :</p>
-             <p class="cod">
-                $ mkdir ~/.rbenv/plugins <br>
-                $ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-             </p>
-             <p class="lamda">
-                Si ruby-buildc'est déjà le cas, vous pouvez simplement pullentrer les dernières modifications :
-             </p>
-             <p class="cod">
-                $ cd ~/.rbenv/plugins && git pull &&  cd -
-             </p>
-             <div class="comment">
-                Encadré 2. Mise à jour et mise à niveau <br>
-                Bien que nous venions d'installer de nouvelles versions de tous les logiciels pertinents, après un certain temps, votre système local ne sera plus synchronisé avec les dernières versions de Homebrew et tous les packages installés.Afin de mettre à jour le système, il est judicieux de mettre à jour Homebrew lui-même de temps en temps, puis de mettre à niveau les packages installés comme suit :
-                <br>
-                <p class="cod">
-                  $ brew mise à jour 
-                  $ brew mise à niveau </p>
-             </div>
-             <p class="lamda">
-                Une fois l'installation de ruby terminée, nous devons indiquer au système qu'il existe une nouvelle version de ruby en utilisant la rehashcommande au nom obscur :
-             </p>
-             <p class="cod">
-                $ rbenv rehash
-             </p>
-             <p class="lamda">
-                Pour ce guide, nous allons également définir la version ruby de la liste  8 comme valeur par défaut globale afin que vous n'ayez pas à vous soucier de spécifier la version ruby lorsque vous démarrez votre projet.La façon de faire cela est d'utiliser la globalcommande :
-             </p>
-             <p class="cod">$ rbenv global 3 .1.2</p>
-             <p class="lamda">À ce stade, c'est probablement une bonne idée de redémarrer votre programme shell pour vous assurer que tous les paramètres sont correctement mis à jour.</p>
-             <p class="lamda">Pour les travaux futurs, vous souhaiterez peut-être utiliser des versions spécifiques de ruby pour chaque projet, ce qui peut être fait en créant un fichier appelé .ruby-versiondans le répertoire racine du projet et en incluant la version de ruby à utiliser.(S'il n'est pas déjà présent sur votre système, vous devrez également l'installer en utilisant rbenv install <version number>comme dans la liste  8. )Consultez la documentation de rbenv pour plus d'informations.</p>
-             <p class="lamda">Enfin, lors de l'installation d'un logiciel ruby via des gemmes ou des packages autonomes de code ruby, il est souvent pratique d'ignorer l'installation de la documentation locale, qui peut prendre plus de temps à installer que le logiciel lui-même, et dans tous les cas, il est plus pratique d'y accéder en ligne.L'empêchement de l'installation de la documentation peut être effectué au cas par cas, mais il est plus pratique d'en faire une valeur par défaut globale en créant un fichier dans le répertoire personnel appelé .gemrcavec des instructions pour ignorer les fichiers de documentation ruby rarement utilisés (et longs à installer), comme indiqué dans la liste  9 .</p>
-              <p class="cod">
-                Liste 9 : Configuration du .gemrcfichier pour ignorer l’installation de la documentation ruby. <br>
-                $ echo  "gem: --no-document" >> ~/.gemrc
-              </p>
-               <p class="lamda">Avec cette configuration, toutes les utilisations gem install <gem name>pour installer des gemmes ruby seront automatiquement simplifiées, rationalisées et sans documentation.</p>
+                        <h2 id="chap0"> QUI SUIS-JE ?</h2>
 
-               <h3>Python</h3>
-               <p class="lamda">Pour installer Python à l’aide de Homebrew, utilisez la commande suivante :</p>
-               <p class="cod">$ brew install python@3.10</p>
-               <p class="lamda">Cela ajoute python3des pip3exécutables (ce dernier est un gestionnaire de paquets Python) :</p>
-               <p class="cod">
-                $ which python3 <br>
-                /opt/homebrew/bin/python3 <br>
-               $ which pip3 <br>
-                /opt/homebrew/bin/pip3
-               </p>
-               <p class="lamda">De nombreuses instructions en ligne nécessitent que vous exécutiez pythonou pip; dans de tels cas, vous devez ajouter la fin  3afin d'obtenir le résultat attendu.</p>
-               
-               <h3>Git</h3>
-               
-               <p class="cod"></p>
-               <p class="lamda">Une version récente du système de contrôle de version Git devrait être fournie automatiquement avec les outils de ligne de commande Xcode installés dans la section  3.1.2 , ce que vous pouvez vérifier à l'aide de la whichcommande :</p>
-               <p class="cod">$ which git</p>
-               <p class="lamda">Si le résultat est vide, cela signifie que Git n'est pas installé et que vous pouvez l'installer avec Homebrew :</p>
-               <p class="cod">$ brew installer git</p>
-               <p class="lamda">Dans tous les cas, vous devez vérifier que le numéro de version de Git est au moins2.28.0 :</p>
-               <p class="cod">
-                $ git --version <br>
-                git version 2.31.1 # doit être au moins 2.28.0
-               </p>
-               <p class="lamda">Si le numéro de version n'est pas assez récent, vous devez exécuter brew updatepuis exécuter brew upgrade git.</p>
-               <h2 id="six">3.2 Linux</h2>
-               <p class="lamda">En raison des origines hautement techniques de Linux, les systèmes Linux sont généralement bien équipés d'outils de développement.Par conséquent, la configuration d’un système d’exploitation Linux natif comme environnement de développement est particulièrement simple.</p>
-               <p class="lamda">Chaque distribution Linux majeure est livrée avec un programme de terminal, un éditeur de texte et Git.Il n'y a que quatre étapes principales que nous recommandons en plus des valeurs par défaut : <br>
-                1-Téléchargez et installez Sublime Text si vous n'avez pas déjà d'éditeur favori.Sublime Text est un produit commercial mais peut être utilisé indéfiniment gratuitement en mode évaluation. <br>
-                2-Suivez les instructions d'installation de rbenv sur le site Web de rbenv. <br>
-                3-Installez et configurez ruby comme indiqué dans la liste  8 et la liste  9 . <br>
-                4-Installez Python comme indiqué dans la liste  2 .En fonction de votre système exact, vous devrez peut-être utiliser un gestionnaire de paquets autre que apt; dans ce cas, utilisez votre sophistication technique ( encadré  1 ) pour déterminer ce qu'il faut faire. <br>
-                5-Assurez-vous que le numéro de version Git est au moins 2.28.0.
-            </p>
-               <p class="lamda">
-                L'étape finale peut être accomplie en exécutant
-               </p>
-               <p class="cod">$ git --version</p>
-               <p class="lamda">Si la sortie n'est pas au moins égale à 2.28.0, accédez à « Mise en route – Installation de Git » et installez la dernière version pour votre système.</p>
+                        <p class="lamda">
+                            ABDOULAYE DIALLO est un développeur de logiciels passionné par l'enseignement. <br>
+                            Fondateur de 643-code et bien d'autres start-ups, je travaille sur des projets personnels et
+                            en tant que freelance.<br>
 
-                <p class="lamda">À ce stade, vous devriez être prêt à partir !</p>
-                <h2 id="sept">3.3 Windows</h2>
-                <p class="lamda">Enfin, nous avons des instructions natives pour Microsoft Windows, ou plutôt des instructions pour utiliser Unix sous Windows.Comme indiqué dans la section  2 , une possibilité consiste à utiliser un IDE cloud, mais nous avons reçu des rapports de résultats particulièrement bons avec l'installation de Linux directement sous Windows.</p>
-                <p class="lamda">C'est exact!Croyez-le ou non, Windows est désormais livré avec un noyau Linux fonctionnel et vous pouvez installer n'importe lawhichle des nombreuses distributions Linux en suivant les instructions de Microsoft .(Pour ceux d'entre nous qui se souviennent de l'entreprise prédatrice et détestatrice de Linux de la fin des années 90 et du début des années 2000, l'idée que Windows soit un jour livré avec un support Linux natif est vraiment incroyable — chiens et chats, vivant ensemble ! — et pourtant nous y sommes .)</p>
-                <p class="lamda">Pour que tout fonctionne, notre recommandation est de suivre l'article tutoriel « ruby sur Windows n'est pas seulement possible, c'est fabuleux avec WSL2 et VS Code » de Scott Hanselman .Bien que particulièrement utile pour le développement Web ruby, le didacticiel de Hanselman est d'une applicabilité assez générale et le suivre devrait aboutir à une expérience de développement générale fantastique sur Windows.</p>
+                            ABDOULAYE DIALLO enseigne la programmation et le marketing à de nombreux étudiants en ligne
+                            et hors ligne en tant que formateur. <br>
 
-                <h2 id="huit">4 Conclusion</h2>
-                <p class="lamda">Si vous êtes arrivé jusqu'ici, et surtout si vous avez terminé la configuration d'un système d'exploitation natif dans la section  3 , vous avez maintenant suffisamment appris sur l'environnement de développement  .Vous êtes prêt à passer à des tutoriels stimulants tels whiche tutorielde CSS et de mise en page  ,le tutorielde ruby  et le tutoriel ruby .Bonne chance!</p>
-                <button class="btn">Bonne chance 💪💪💪  </button>
-                
-             </div>
-             
-         </div>
- 
-         
-        </section>       
+                            ABDOULAYE DIALLO maîtrise l'art d'expliquer des sujets très complexes de la manière la plus
+                            simple possible, facile à comprendre et à suivre. Mes cours vidéos peuvent également
+                            utilisés par des entreprises pour former leurs employés et par des universités pour préparer
+                            leurs étudiants et améliorer leurs compétences en fonction des exigences du secteur.
 
-    </main>
-   
-    
+
+
+                        </p>
+
+                        <button class="btn">Commencer: le chapitre</button>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!-- 1 -->
+
+            <section>
+                <div class="container-video">
+
+                    <video src="/ressources/video.mp4" class="video"></video>
+
+                    <div class="controls">
+                        <div class="barre-orange">
+                            <div class="juice"></div>
+                        </div>
+
+                        <div class="buttons">
+                            <button id="play-pause">
+                                <img src="/ressources/play.svg">
+                            </button>
+                            <button id="mute">Mute</button>
+                            <input type="range" id="volume-slider" min="0" max="100" value="50" step="1">
+                            <button id="fullscreen">
+                                <img src="/ressources/fullscreen.svg">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contenu">
+                    <div class="intro">
+                        <p class="lamda">L’une des tâches les plus importantes pour tout développeur en herbe, ou pour
+                            tout technicien en général, est de configurer son ordinateur comme environnement de
+                            développement , le rendant adapté au développement de sites Web, d’applications Web et
+                            d’autres logiciels. 643-code Dev Environment pour se perfectionner est conçu pour compléter
+                            la séquence principale 643-code et le didacticiel ruby en regroupant tout le matériel
+                            pertinent au même endroit.</p>
+                        <p class="lamda">Ce tutoriel couvre plusieurs options pour la configuration d'un environnement
+                            de développement, destiné aux lecteurs de différents niveaux d'expérience et de
+                            sophistication.Si vous finissez par utiliser l'option présentée dans la section 2 , il n'y a
+                            pas de prérequis minimum pour ce didacticiel autre que des connaissances informatiques
+                            générales.Si vous souhaitez suivre la configuration plus difficile de la section 3 (que nous
+                            recommandons à la plupart des lecteurs d'aborder à un moment donné), vous devez avoir une
+                            connaissance de base de la ligne de commande Unix (comme indiqué dansle tutorielde ligne de
+                            commande ), et une connaissance des éditeurs de texte et de la configuration du système
+                            (comme indiqué dansle tutorield'éditeur de texte ) est recommandée.</p>
+                        <p class="lamda">Des versions ebook de ce tutoriel sont disponibles gratuitement sur
+                            learnenough.com .</p>
+                        <h2 id="un">1-Options d'environnement de développement</h2>
+                        <p class="lamda">Dans ce tutoriel, nous nous concentrons sur l’installation ou l’activation des
+                            quatre outils fondamentaux de développement logiciel suivants ( Figure 1 ) :</p>
+                        <ul>
+                            <li>1-Terminal de ligne de commande (« shell »)</li>
+                            <li>2-Éditeur de texte</li>
+                            <li>3-Contrôle de version (Git)</li>
+                            <li>4-Langages de programmation (ruby, etc.)</li>
+                        </ul>
+                        <p class="lamda">Pour plus d'informations sur ces différents types d'applications logicielles,
+                            consultezle tutorielde ligne de commande ,le tutorield'éditeur de texte ,le tutorielde Git
+                            etle tutorielde ruby .</p>
+
+                        <p class="cycle spec"><img src="/ressources/v1.png" alt=""></p>
+                        <p class="fig">Figure 1 : Éléments typiques d’un environnement de développement.</p>
+                        <p class="lamda">Lors de la mise en place d'un environnement de développement, nous recommandons
+                            deux possibilités principales, classées par ordre croissant de difficulté :</p>
+                        <ul>
+                            <li>IDE Cloud</li>
+                            <li>Système d'exploitation natif (macOS, Linux, Windows)</li>
+                        </ul>
+                        <p class="lamda">Si vous êtes relativement inexpérimenté, nous vous recommandons de commencer
+                            par l'IDE cloud ( Section 2 ), car il présente le processus de configuration le moins
+                            difficile.</p>
+                        <h2 id="deux">Système natif</h2>
+                        <p class="lamda">Bien que l'option IDE soit idéale lorsque vous débutez, il est finalement
+                            important de pouvoir développer des logiciels sur votre système d'exploitation natif
+                            (OS).Malheureusement, la mise en place d’un environnement de développement natif entièrement
+                            fonctionnel peut être un processus difficile et frustrant 1 — laissant probablement de
+                            nombreuses occasions d’exercer votre sophistication technique ( Encadré 1 ) — mais c’est un
+                            rite de passage essentiel pour tout aspirant génie technique.</p>
+                        <p class="lamda">Afin de relever ce défi difficile, dans la section 3, nous discuterons de la
+                            configuration native du système d'exploitation pour macOS, Linux et Windows.</p>
+                        <p class="comment">
+                            Encadré 1. Sophistication technique <br>
+                            La sophistication technique est la capacité à résoudre de manière autonome des problèmes
+                            techniques.Dans le cadre de l'installation d'un environnement de développement, cela
+                            signifie savoir rechercher sur Google le message d'erreur si whichque chose ne va pas,
+                            essayer de quitter et de redémarrer une application (comme le shell de ligne de commande)
+                            pour voir si cela résout les problèmes, etc.
+                            <br>
+                            Il peut y avoir tellement de choses qui peuvent mal se passer lors de la configuration d'un
+                            environnement de développement qu'il existe rarement une solution générale au problème. Il
+                            vous suffit de continuer à appliquer votre sophistication technique jusqu'à ce que tout
+                            fonctionne.Et si vous êtes coincé, ne vous inquiétez pas trop : à un moment ou à un autre,
+                            cela nous arrive à tous.
+                        </p>
+                        <h2 id="trois">2 IDE Cloud</h2>
+                        <p class="lamda">L'option d'environnement de développement la plus simple est un IDE cloud , qui
+                            est un environnement de développement intégré dans le cloud auwhich vous accédez à l'aide du
+                            navigateur Web de votre choix.Bien que facile à activer, le système résultant est une
+                            machine de développement de qualité industrielle, pas un jouet.De plus, l'IDE cloud
+                            fonctionne automatiquement sur plusieurs plates-formes, car tout ce dont vous avez besoin
+                            est un navigateur Web ordinaire pour l'utiliser (ce que tous les principaux systèmes
+                            d'exploitation fournissent).</p>
+                        <p class="lamda">Il existe plusieurs options commerciales pour exécuter un IDE cloud, et dans le
+                            cadre du développement du didacticiel ruby, nous nous sommes associés à Cloud9 (qui fait
+                            partie d'Amazon Web Services).L'environnement résultant est approprié au développement Web
+                            ruby et inclut bien entendu tous les éléments mentionnés dans la section 1 .En particulier,
+                            AWS Cloud9 est équipé d’un terminal de ligne de commande et d’un éditeur de texte (y compris
+                            un navigateur de système de fichiers), comme illustré dans la Figure 2 .Étant donné que
+                            chaque espace de travail Cloud9 fournit un système Linux entièrement fonctionnel, il inclut
+                            également automatiquement le système de contrôle de version Git, ainsi que ruby et plusieurs
+                            autres langages de programmation.</p>
+                        <p class="cycle spec"><img src="/ressources/v2.png" alt=""></p>
+                        <p class="fig">Figure 2 : L’anatomie de l’IDE ​​cloud.</p>
+                        <p class="lamda">
+                            Voici les étapes à suivre pour démarrer avec l'environnement de développement cloud : <br>
+
+
+                            1-Étant donné que Cloud9 fait partie d'Amazon Web Services (AWS), si vous possédez déjà un
+                            compte AWS, vous pouvez simplement vous connecter . 3Pour créer un nouvel environnement
+                            d’espace de travail Cloud9, accédez à la console AWS et saisissez « Cloud9 » dans la zone de
+                            recherche.
+                            2-Si vous n'avez pas encore de compte AWS, vous devez créer un compte gratuit sur AWS Cloud9
+                            . 4Afin d'éviter les abus, AWS exige une carte de crédit valide pour l'inscription, mais
+                            l'espace de travail est 100 % gratuit (pendant un an au moment de la rédaction de cet
+                            article) et votre carte ne sera pas débitée.Vous devrez peut-être attendre jusqu'à 24 heures
+                            pour que le compte soit activé, mais dans mon cas, il était prêt en une dizaine de minutes.
+                            3-Une fois que vous avez réussi à accéder à la page d'administration de Cloud9 ( Figure 3 ),
+                            continuez à cliquer sur « Créer un environnement » jusqu'à ce que vous vous retrouviez sur
+                            une page qui ressemble à la Figure 4 .Saisissez les informations comme indiqué, puis
+                            assurez-vous de choisir Ubuntu Server ( et non Amazon Linux) ( Figure 5 ).Enfin, continuez à
+                            cliquer sur les boutons de confirmation jusqu'à ce que Cloud9 commence à provisionner l'IDE
+                            ( Figure 6 ).Vous pouvez rencontrer un message d’avertissement concernant le fait d’être un
+                            utilisateur « root », que vous pouvez ignorer en toute sécurité à ce stade précoce.(Si vous
+                            vous en sentez capable, vous pouvez implémenter la méthode préférée, appelée utilisateur de
+                            gestion des identités et des accès (IAM), à ce stade.(Voir le chapitre 13 du didacticiel
+                            ruby pour plus d'informations.)
+                            4-Enfin, assurez-vous que vous utilisez une version à jour de Git ( Listing 1 ).
+                        </p>
+                        <p class="cycle spec"><img src="/ressources/v3.png" alt=""></p>
+                        <p class="fig">Figure 3 : La page d’administration de Cloud9.</p>
+                        <p class="cycle spec"><img src="/ressources/v4.png" alt=""></p>
+                        <p class="fig">Figure 4 : Création d’un nouvel environnement de travail sur AWS Cloud9..</p>
+                        <p class="cycle spec"><img src="/ressources/v5.png" alt=""></p>
+                        <p class="fig">Figure 5 : Sélection du serveur Ubuntu .</p>
+                        <p class="cycle spec"><img src="/ressources/v6.png" alt=""></p>
+                        <p class="fig">Figure 6 : L’IDE cloud par défaut..</p>
+                        <p class="lamda">Étant donné que l’utilisation de deux espaces pour l’indentation est une
+                            convention quasi universelle dans ruby, nous recommandons également de modifier l’éditeur
+                            pour utiliser deux espaces au lieu des quatre par défaut.Comme le montre la Figure 7 , vous
+                            pouvez le faire en cliquant sur l’icône d’engrenage en haut à droite, puis en modifiant le
+                            paramètre Soft Tabs sur 2.(Notez que cela prend effet immédiatement ; vous n'avez pas besoin
+                            de cliquer sur un bouton Enregistrer.)</p>
+                        <p class="cycle spec"><img src="/ressources/v7.png" alt=""></p>
+                        <p class="fig">Figure 7 : Configuration de Cloud9 pour utiliser deux espaces pour l’indentation.
+                        </p>
+                        <p class="cod">
+                            Liste 1 : Mise à niveau de Git (si nécessaire). <br>
+                            $ git --version <br>
+                            # Si le numéro de version n'est pas supérieur à 2 .28.0, exécutez la commande suivante :
+                            <br>
+                            $ source < ( curl -sL https://cdn.learnenough.com/upgrade_git ) </p>
+                                <p class="lamda">Il est également important d'utiliser une version compatible de Node.js
+                                    :</p>
+                                <p class="cod">
+                                    $ nvm install 16 .13.0 <br>
+                                    $ node -v <br>
+                                    v16.13.0
+                                </p>
+                                <p class="lamda">Au moment de la rédaction de cet article, la version recommandée de
+                                    ruby est ruby 3.1.2, que vous pouvez installer et utiliser sur l'IDE cloud comme
+                                    suit :</p>
+                                <p class="cod">
+                                    $ rvm obtenir stable <br>
+                                    $ rvm installer 3 .1.2 <br>
+                                    $ rvm --default utiliser 3 .1.2
+                                </p>
+                                <p class="lamda">(Cela utilise ruby Version Manager , qui est préinstallé sur l'IDE
+                                    cloud.) Une fois cette commande terminée, vous pouvez vérifier la version de ruby
+                                    comme suit :</p>
+                                <p class="cod">
+                                    $ ruby ​​-v <br>
+                                    ruby ​​3.1.2p20 (2022-04-12 révision 4491bb740a) [x86_64-linux]
+                                </p>
+                                <p class="lamda">
+                                    (Les numéros de version exacts peuvent différer.)Si vous utilisez un didacticiel qui
+                                    recommande une version différente de ruby, remplacez simplement 3.1.2 par la version
+                                    spécifiée dans les commandes ci-dessus (par exemple, 2.7.5). <br>
+                                    Pour installer Python, utilisez les commandes indiquées dans la liste 2 .
+                                </p>
+                                <p class="cod">
+                                    Liste 2 : Installation de Python. <br>
+                                    $ sudo add-apt-repository -y ppa:deadsnakes/ppa <br>
+                                    $ sudo apt-get install -y python3.10 <br>
+                                    $ sudo apt-get install -y python3.10-venv <br>
+                                    $ sudo ln -sf /usr/bin/python3.10 /usr/bin/python3
+                                </p>
+                                <p class="lamda">Cela installe la version Python 3.10 et crée un lien symbolique vers
+                                    python3pour plus de commodité.</p>
+                                <p class="lamda">Cloud9 est livré avec plusieurs éditeurs de texte, tels que nanoet vim,
+                                    et il est également pratique d'ajouter la c9commande pour ouvrir des fichiers à
+                                    l'aide de l'éditeur visuel natif de Cloud9 :</p>
+                                <p class="cod">$ npm install --location = global c9</p>
+                                <p class="lamda">Enfin, certains utilisateurs de l'IDE cloud ont signalé des problèmes
+                                    de dépassement des limites de taille. Je recommande donc d'exécuter la commande de
+                                    la liste 3 si vous utilisez l'environnement de développement cloud.</p>
+                                <p class="cod">
+                                    Liste 3 : Ajout de taille supplémentaire à l'IDE cloud. <br>
+                                    $ source < ( curl -sL https://cdn.learnenough.com/resize ) </p>
+                                        <p class="lamda">À ce stade, vous avez terminé !Bien qu'un accès Internet soit
+                                            requis pour utiliser Cloud9, il n'existe aucune alternative combinant autant
+                                            de puissance avec une configuration aussi simple.</p>
+                                        <h2 id="quatre">3-Configuration native du système d'exploitation</h2>
+                                        <p class="lamda">Comme mentionné dans la section 1 , la configuration de votre
+                                            système d'exploitation natif en tant qu'environnement de développement peut
+                                            être difficile, mais c'est une étape importante à franchir une fois que vous
+                                            avez atteint un certain niveau de sophistication technique.L'option IDE
+                                            cloud est un excellent point de départ, mais vous devrez éventuellement
+                                            prendre le taureau par les cornes ( Figure 8 ) 5 et plier votre système
+                                            natif à votre volonté.</p>
+                                        <p class="cycle spec"><img src="/ressources/v8.png" alt=""></p>
+                                        <p class="fig">Figure 8 : Parfois, il faut prendre le taureau par les cornes.
+                                        </p>
+                                        <p class="lamda">La section 3.1 couvre la conversion de macOS en un
+                                            environnement de développement entièrement équipé, tandis que la section 3.2
+                                            fait de même pour Linux.Nous couvrons les options Microsoft Windows dans la
+                                            section 3.3 , mais (comme mentionné brièvement dans la section 1 ), cette
+                                            section se réfère actuellement à l'option cloud IDE dans la section 2 .</p>
+
+                                        <h2 id="cinq">3.1 macOS</h2>
+                                        <p class="lamda">Le système d'exploitation natif Macintosh, appelé à l'origine
+                                            Mac OS X et désormais connu simplement sous le nom de macOS , dispose d'une
+                                            interface utilisateur graphique (GUI) soignée tout en étant construit sur
+                                            une base Unix solide.Par conséquent, macOS est parfaitement adapté à une
+                                            utilisation comme environnement de développement pour un programmeur.</p>
+                                        <p class="lamda">Les étapes de cette section constituent plus qu'un simple
+                                            système minimal ; vous pouvez en fait vous en sortir en faisant beaucoup
+                                            moins, mais vos trois auteurs utilisent tous macOS eux-mêmes, et nous
+                                            pensons qu'il est important de ne pas vous léser avec une configuration à
+                                            moitié cuite.</p>
+                                        <h3>Terminal et éditeur</h3>
+                                        <p class="lamda">Bien que macOS soit livré avec un programme de terminal natif,
+                                            nous vous recommandons d'installer iTerm , qui inclut diverses améliorations
+                                            qui le rendent meilleur que la valeur par défaut pour les développeurs et
+                                            autres utilisateurs techniques.</p>
+                                        <p class="lamda">Nous vous recommandons également d'installer un éditeur de
+                                            texte de programmeur.Il existe de nombreux excellents choix, mais Sublime
+                                            Text (abordé dans Vscode: Le Guide pour se perfectionner ) est un bon point
+                                            de départ si vous n'avez pas déjà de favori.</p>
+                                        <p class="lamda">Au fait, pour les tutoriels 643-code et le tutoriel Rails, il
+                                            est généralement recommandé d'utiliser le shell Bourne-again (Bash) plutôt
+                                            que le shell Z par défaut (même si cela n'a souvent pas d'importance).Pour
+                                            passer votre shell à Bash, exécutez chsh -s /bin/bashla ligne de commande,
+                                            entrez votre mot de passe et redémarrez votre programme de terminal.Tout
+                                            message d’alerte résultant peut être ignoré en toute sécurité.Consultez
+                                            l’article du blog 643-code « Utilisation de Z Shell sur Mac avec les
+                                            didacticiels 643-code » pour plus d’informations.</p>
+                                        <h3>Outils de ligne de commande Xcode</h3>
+                                        <p class="lamda">Bien que basé sur Unix, macOS 6 n'est pas livré avec tous les
+                                            logiciels nécessaires à un environnement de développement approprié.Afin de
+                                            combler cette lacune, les utilisateurs de macOS doivent installer Xcode ,
+                                            une vaste suite d’outils de développement et de bibliothèques de code créée
+                                            par Apple.</p>
+                                        <p class="lamda">Xcode nécessitait auparavant un téléchargement de plus de 4 Go
+                                            de fichiers sources d'installation, mais heureusement, Apple a récemment
+                                            rendu Xcode incroyablement rapide et facile à installer avec une simple
+                                            commande en ligne de commande, comme indiqué dans la liste </p>
+                                        <p class="cod">
+                                            Liste 4 : Installation des outils de ligne de commande Xcode. <br>
+                                            $ xcode-select --install
+                                        </p>
+                                        <h3>Brassage maison</h3>
+                                        <p class="lamda">L'étape suivante est techniquement facultative, mais à notre
+                                            avis, elle est nécessaire pour un environnement de développement macOS
+                                            véritablement professionnel : à savoir, l'installation de l'excellent
+                                            gestionnaire de paquets Homebrew .</p>
+                                        <p class="lamda">Vous pouvez considérer un gestionnaire de paquets comme un App
+                                            Store qui s'exécute sur la ligne de commande et qui est rempli de logiciels
+                                            open source gratuits.De nos jours, la plupart des distributions Linux sont
+                                            livrées avec un gestionnaire de paquets natif ( Section 3.2 ), mais par
+                                            défaut, macOS n'en a pas.Homebrew est l'un des nombreux gestionnaires
+                                            disponibles dans la communauté open source, mais au fil du temps, il est
+                                            devenu l'option la plus populaire parmi les développeurs macOS sérieux.</p>
+                                        <p class="lamda">Comme nous le verrons dans la section 3.1.5 , nous utiliserons
+                                            un programme appelé rbenv pour installer ruby, qui à son tour sera installé
+                                            via Homebrew dans la section 3.1.4 .Mais Homebrew lui-même nécessite ruby,
+                                            il semble donc que nous soyons tombés sur une dépendance circulaire
+                                            .Heureusement, macOS est livré avec un système ruby que nous pouvons
+                                            utiliser pour démarrer l'installation.Nous utiliserons ce ruby par défaut
+                                            pour installer Homebrew, puis nous installerons rbenv et des versions ruby
+                                            supplémentaires comme indiqué ci-dessus.</p>
+                                        <p class="lamda">Le programme d'installation de Homebrew est un script Bash et
+                                            peut être consulté à l'aide du curlprogramme décrit dansle tutorielde ligne
+                                            de commande .Nous pouvons exécuter le script d'installation de Homebrew en
+                                            utilisant l' bashexécutable système, qui se trouve dans le /binrépertoire.La
+                                            commande complète apparaît comme dans la liste 5 .</p>
+
+                                        <p class="cod">Liste 5 : Installation du gestionnaire de paquets Homebrew. <br>
+                                            $ /bin/bash -c " $( curl -fsSL https://www.learnenough.com/homebrew.sh ) "
+                                        </p>
+                                        <p class="lamda">Notez que la liste 5 utilise une URL de transfert
+                                            learnenough.com, qui pointe vers le script d'installation Homebrew actuel.De
+                                            cette façon, si Homebrew modifie l'URL utilisée pour héberger le script,
+                                            nous pouvons simplement mettre à jour l'adresse de transfert et ce tutoriel
+                                            continuera à fonctionner comme écrit.(Vous pouvez également simplement
+                                            copier et coller la commande complète depuis la page d'accueil de Homebrew
+                                            si vous le souhaitez.)</p>
+                                        <p class="lamda">Homebrew installe une brewcommande de ligne de commande
+                                            utilisée pour installer, mettre à jour et supprimer des packages.Une fois
+                                            l'installation de Homebrew terminée, c'est une bonne idée d'exécuter brew
+                                            doctor, ce qui garantit que tous les répertoires et autorisations
+                                            nécessaires à Homebrew pour gérer les fichiers locaux sont correctement
+                                            configurés :</p>
+                                        <p class="cod">
+                                            docteur <br>
+                                            brasseur
+                                        </p>
+                                        <p class="lamda">Si vous rencontrez des problèmes à ce stade, vous devrez vous
+                                            référer au wiki de dépannage de Homebrew , mais vous ne devriez vraiment pas
+                                            le faire à moins que vous n'ayez apporté des modifications à des dossiers
+                                            système et des autorisations aléatoires.</p>
+
+                                        <h3>Environnement ruby (rbenv)</h3>
+                                        <p class="lamda">Comme nous venons de le voir, macOS est livré avec ruby
+                                            préinstallé, mais nous n'avons aucun contrôle sur la version exacte, et
+                                            macOS ne nous permet pas nativement d'utiliser plusieurs versions de ruby en
+                                            parallèle.Pour nous donner plus de flexibilité avec notre environnement de
+                                            développement, nous allons installer rbenv , qui est un utilitaire qui gère
+                                            différentes versions de ruby et s'assure que les packages logiciels ruby
+                                            (appelés gems ) sont placés au bon endroit pour que ruby les trouve.</p>
+                                        <br>
+                                        <p class="lamda">L'utilisation de rbenv avec la commande ruby-build associée
+                                            nous permet également de spécifier une version différente de ruby pour
+                                            différents référentiels de projets, ce qui est une tâche courante dans le
+                                            développement de logiciels .Par exemple, une ancienne version d’un programme
+                                            peut nécessiter une ancienne version de ruby pour fonctionner
+                                            correctement.L'utilisation de rbenv signifie que nous pouvons prendre en
+                                            charge un programme aussi ancien tout en exécutant une version plus à jour
+                                            de ruby pour nos autres projets.</p>
+                                        <p class="lamda">L'installation de rbenv est facile avec Homebrew.Nous pouvons
+                                            installer à la fois rbenv et ruby-build en une seule étape en utilisant brew
+                                            install rbenv, comme indiqué dans la liste 6 </p>
+                                        <p class="cod">Liste 6 : Installation de rbenv et ruby-build. <br>
+                                            $ brew install rbenv # installe également automatiquement ruby-build</p>
+                                        <p class="lamda">Une fois l'installation de la liste 6 terminée, nous devons
+                                            faire fonctionner rbenv en utilisant rbenv init, comme indiqué dans la liste
+                                            7 .</p>
+                                        <p class="lamda">Remarque : si vous utilisez Zsh à la place, remplacez- .zshrcle
+                                            par .bash_profiledans cette section.Consultez « Utilisation de Z Shell sur
+                                            Mac avec les didacticiels 643-code » pour plus d’informations.</p>
+
+                                        <p class="cod">
+                                            Liste 7 : Initialisation de rbenv. <br>
+                                            $ rbenv init <br>
+                                            # Chargez rbenv automatiquement en ajoutant <br>
+                                            # ce qui suit à ~/.bash_profile ( ou ~/.zshrc si vous utilisez Zsh ) : <br>
+
+                                            eval "$(rbenv init -)"
+                                        </p>
+                                        <p class="lamda">Si la liste 7 vous donne un message d’erreur tel que « Aucun
+                                            fichier ou répertoire de ce type. », essayez de quitter votre programme
+                                            shell avec Ctrl-D et de le redémarrer, puis réessayez la commande.(Ce type
+                                            de technique de redémarrage et de nouvelle tentative est une sophistication
+                                            technique classique ( Encadré 1 ).)</p>
+                                        <p class="lamda">Comme on le voit dans la liste 7 , l'exécution rbenv initnous
+                                            donne une suggestion sur la façon d'éviter d'avoir à initialiser rbenv à la
+                                            main à chaque fois : nous devons simplement ajouter la ligne</p>
+                                        <p class="cod">eval "$(rbenv init -)"</p>
+                                        <p class="lamda">à notre fichier de profil Bash .bash_profile(qui est abordé
+                                            dans Apprendre à utiliser suffisamment l'éditeur de texte ).</p>
+                                        <p class="lamda">Si vous préférez, vous pouvez utiliser un éditeur de texte pour
+                                            ajouter la evalligne au fichier de votre système .bash_profile, mais le
+                                            moyen le plus simple est d'utiliser echol'opérateur d'ajout >> décrit dans
+                                            Apprendre une ligne de commande suffisamment dangereuse , comme ceci :</p>
+
+                                        <p class="cod">$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile # ou ~/.zshrc
+                                            si vous utilisez Zsh</p>
+                                        <p class="lamda">Notez que nous avons inclus le répertoire personnel ~dans le
+                                            chemin afin qu'il fonctionne which que soit le répertoire dans lewhich nous
+                                            nous trouvons actuellement.</p>
+                                        <p class="lamda">Enfin, pour activer le nouveau fichier de profil, nous devons
+                                            le faire source(comme mentionné dans Vscode: Le Guide pour se perfectionner
+                                            ) :</p>
+                                        <p class="cod">$ source ~/.bash_profile # ou ~/.zshrc si vous utilisez Zsh</p>
+                                        <h3>Nouvelle version de ruby</h3>
+                                        <p class="lamda">Maintenant que rbenv est configuré, donnons-lui une version non
+                                            système de ruby à gérer.Le processus d'installation est entièrement géré par
+                                            rbenv, il vous suffit donc de lui indiquer la version que vous souhaitez sur
+                                            votre système en lui transmettant le numéro de version exact de ruby.</p>
+                                        <p class="lamda">Nous utiliserons ruby 3.1.2 dans ce tutoriel, qui, au moment de
+                                            la rédaction de cet article, fonctionne avec une grande variété
+                                            d'applications ruby, mais vous pouvez également utiliser une version
+                                            actuelle ou précédente comme indiqué sur le site Web de ruby.</p>
+                                        <p class="lamda">Pour installer la version souhaitée de ruby en utilisant rbenv,
+                                            exécutez simplement la commande indiquée dans la liste 8 .Si votre système
+                                            se plaint que la version ruby donnée n'est pas disponible, vous devrez
+                                            mettre à jour votre système pour accéder à la dernière version ( Encadré 2
+                                            ).</p>
+                                        <p class="cod">Liste 8 : Installation d’une nouvelle copie de ruby. <br>
+                                            $ rbenv install 3 .1.2</p>
+
+                                        <p class="lamda">Après avoir exécuté la commande de la liste 8 , vous devriez
+                                            voir rbenv démarrer le processus de téléchargement et installer toutes les
+                                            dépendances nécessaires pour cette version spécifique de ruby (ce qui peut
+                                            prendre un certain temps en fonction de la bande passante et des limitations
+                                            du processeur).</p>
+                                        <p class="lamda">Remarque : vous pouvez recevoir un message d’erreur du
+                                            formulaire</p>
+                                        <p class="cod">
+                                            ruby-build : définition introuvable : 3.1.2. <br>
+
+                                            Consultez toutes les versions disponibles avec « rbenv install --list ».
+                                            <br>
+
+                                            Si la version souhaitée est manquante, essayez de mettre à jour ruby-build :
+                                            <br>
+
+                                            brew update && brew upgrade ruby-build.
+                                        </p>
+                                        <p class="lamda">Si cela se produit, vous devez cloner la ruby-buildliste la
+                                            plus récente dans le pluginsrépertoire rbenv :</p>
+                                        <p class="cod">
+                                            $ mkdir ~/.rbenv/plugins <br>
+                                            $ git clone https://github.com/rbenv/ruby-build.git
+                                            ~/.rbenv/plugins/ruby-build
+                                        </p>
+                                        <p class="lamda">
+                                            Si ruby-buildc'est déjà le cas, vous pouvez simplement pullentrer les
+                                            dernières modifications :
+                                        </p>
+                                        <p class="cod">
+                                            $ cd ~/.rbenv/plugins && git pull && cd -
+                                        </p>
+                                        <div class="comment">
+                                            Encadré 2. Mise à jour et mise à niveau <br>
+                                            Bien que nous venions d'installer de nouvelles versions de tous les
+                                            logiciels pertinents, après un certain temps, votre système local ne sera
+                                            plus synchronisé avec les dernières versions de Homebrew et tous les
+                                            packages installés.Afin de mettre à jour le système, il est judicieux de
+                                            mettre à jour Homebrew lui-même de temps en temps, puis de mettre à niveau
+                                            les packages installés comme suit :
+                                            <br>
+                                            <p class="cod">
+                                                $ brew mise à jour
+                                                $ brew mise à niveau </p>
+                                        </div>
+                                        <p class="lamda">
+                                            Une fois l'installation de ruby terminée, nous devons indiquer au système
+                                            qu'il existe une nouvelle version de ruby en utilisant la rehashcommande au
+                                            nom obscur :
+                                        </p>
+                                        <p class="cod">
+                                            $ rbenv rehash
+                                        </p>
+                                        <p class="lamda">
+                                            Pour ce guide, nous allons également définir la version ruby de la liste 8
+                                            comme valeur par défaut globale afin que vous n'ayez pas à vous soucier de
+                                            spécifier la version ruby lorsque vous démarrez votre projet.La façon de
+                                            faire cela est d'utiliser la globalcommande :
+                                        </p>
+                                        <p class="cod">$ rbenv global 3 .1.2</p>
+                                        <p class="lamda">À ce stade, c'est probablement une bonne idée de redémarrer
+                                            votre programme shell pour vous assurer que tous les paramètres sont
+                                            correctement mis à jour.</p>
+                                        <p class="lamda">Pour les travaux futurs, vous souhaiterez peut-être utiliser
+                                            des versions spécifiques de ruby pour chaque projet, ce qui peut être fait
+                                            en créant un fichier appelé .ruby-versiondans le répertoire racine du projet
+                                            et en incluant la version de ruby à utiliser.(S'il n'est pas déjà présent
+                                            sur votre système, vous devrez également l'installer en utilisant rbenv
+                                            install <version number>comme dans la liste 8. )Consultez la documentation
+                                                de rbenv pour plus d'informations.</p>
+                                        <p class="lamda">Enfin, lors de l'installation d'un logiciel ruby via des gemmes
+                                            ou des packages autonomes de code ruby, il est souvent pratique d'ignorer
+                                            l'installation de la documentation locale, qui peut prendre plus de temps à
+                                            installer que le logiciel lui-même, et dans tous les cas, il est plus
+                                            pratique d'y accéder en ligne.L'empêchement de l'installation de la
+                                            documentation peut être effectué au cas par cas, mais il est plus pratique
+                                            d'en faire une valeur par défaut globale en créant un fichier dans le
+                                            répertoire personnel appelé .gemrcavec des instructions pour ignorer les
+                                            fichiers de documentation ruby rarement utilisés (et longs à installer),
+                                            comme indiqué dans la liste 9 .</p>
+                                        <p class="cod">
+                                            Liste 9 : Configuration du .gemrcfichier pour ignorer l’installation de la
+                                            documentation ruby. <br>
+                                            $ echo "gem: --no-document" >> ~/.gemrc
+                                        </p>
+                                        <p class="lamda">Avec cette configuration, toutes les utilisations gem install
+                                            <gem name>pour installer des gemmes ruby seront automatiquement simplifiées,
+                                                rationalisées et sans documentation.</p>
+
+                                        <h3>Python</h3>
+                                        <p class="lamda">Pour installer Python à l’aide de Homebrew, utilisez la
+                                            commande suivante :</p>
+                                        <p class="cod">$ brew install python@3.10</p>
+                                        <p class="lamda">Cela ajoute python3des pip3exécutables (ce dernier est un
+                                            gestionnaire de paquets Python) :</p>
+                                        <p class="cod">
+                                            $ which python3 <br>
+                                            /opt/homebrew/bin/python3 <br>
+                                            $ which pip3 <br>
+                                            /opt/homebrew/bin/pip3
+                                        </p>
+                                        <p class="lamda">De nombreuses instructions en ligne nécessitent que vous
+                                            exécutiez pythonou pip; dans de tels cas, vous devez ajouter la fin 3afin
+                                            d'obtenir le résultat attendu.</p>
+
+                                        <h3>Git</h3>
+
+                                        <p class="cod"></p>
+                                        <p class="lamda">Une version récente du système de contrôle de version Git
+                                            devrait être fournie automatiquement avec les outils de ligne de commande
+                                            Xcode installés dans la section 3.1.2 , ce que vous pouvez vérifier à l'aide
+                                            de la whichcommande :</p>
+                                        <p class="cod">$ which git</p>
+                                        <p class="lamda">Si le résultat est vide, cela signifie que Git n'est pas
+                                            installé et que vous pouvez l'installer avec Homebrew :</p>
+                                        <p class="cod">$ brew installer git</p>
+                                        <p class="lamda">Dans tous les cas, vous devez vérifier que le numéro de version
+                                            de Git est au moins2.28.0 :</p>
+                                        <p class="cod">
+                                            $ git --version <br>
+                                            git version 2.31.1 # doit être au moins 2.28.0
+                                        </p>
+                                        <p class="lamda">Si le numéro de version n'est pas assez récent, vous devez
+                                            exécuter brew updatepuis exécuter brew upgrade git.</p>
+                                        <h2 id="six">3.2 Linux</h2>
+                                        <p class="lamda">En raison des origines hautement techniques de Linux, les
+                                            systèmes Linux sont généralement bien équipés d'outils de développement.Par
+                                            conséquent, la configuration d’un système d’exploitation Linux natif comme
+                                            environnement de développement est particulièrement simple.</p>
+                                        <p class="lamda">Chaque distribution Linux majeure est livrée avec un programme
+                                            de terminal, un éditeur de texte et Git.Il n'y a que quatre étapes
+                                            principales que nous recommandons en plus des valeurs par défaut : <br>
+                                            1-Téléchargez et installez Sublime Text si vous n'avez pas déjà d'éditeur
+                                            favori.Sublime Text est un produit commercial mais peut être utilisé
+                                            indéfiniment gratuitement en mode évaluation. <br>
+                                            2-Suivez les instructions d'installation de rbenv sur le site Web de rbenv.
+                                            <br>
+                                            3-Installez et configurez ruby comme indiqué dans la liste 8 et la liste 9 .
+                                            <br>
+                                            4-Installez Python comme indiqué dans la liste 2 .En fonction de votre
+                                            système exact, vous devrez peut-être utiliser un gestionnaire de paquets
+                                            autre que apt; dans ce cas, utilisez votre sophistication technique (
+                                            encadré 1 ) pour déterminer ce qu'il faut faire. <br>
+                                            5-Assurez-vous que le numéro de version Git est au moins 2.28.0.
+                                        </p>
+                                        <p class="lamda">
+                                            L'étape finale peut être accomplie en exécutant
+                                        </p>
+                                        <p class="cod">$ git --version</p>
+                                        <p class="lamda">Si la sortie n'est pas au moins égale à 2.28.0, accédez à «
+                                            Mise en route – Installation de Git » et installez la dernière version pour
+                                            votre système.</p>
+
+                                        <p class="lamda">À ce stade, vous devriez être prêt à partir !</p>
+                                        <h2 id="sept">3.3 Windows</h2>
+                                        <p class="lamda">Enfin, nous avons des instructions natives pour Microsoft
+                                            Windows, ou plutôt des instructions pour utiliser Unix sous Windows.Comme
+                                            indiqué dans la section 2 , une possibilité consiste à utiliser un IDE
+                                            cloud, mais nous avons reçu des rapports de résultats particulièrement bons
+                                            avec l'installation de Linux directement sous Windows.</p>
+                                        <p class="lamda">C'est exact!Croyez-le ou non, Windows est désormais livré avec
+                                            un noyau Linux fonctionnel et vous pouvez installer n'importe lawhichle des
+                                            nombreuses distributions Linux en suivant les instructions de Microsoft
+                                            .(Pour ceux d'entre nous qui se souviennent de l'entreprise prédatrice et
+                                            détestatrice de Linux de la fin des années 90 et du début des années 2000,
+                                            l'idée que Windows soit un jour livré avec un support Linux natif est
+                                            vraiment incroyable — chiens et chats, vivant ensemble ! — et pourtant nous
+                                            y sommes .)</p>
+                                        <p class="lamda">Pour que tout fonctionne, notre recommandation est de suivre
+                                            l'article tutoriel « ruby sur Windows n'est pas seulement possible, c'est
+                                            fabuleux avec WSL2 et VS Code » de Scott Hanselman .Bien que
+                                            particulièrement utile pour le développement Web ruby, le didacticiel de
+                                            Hanselman est d'une applicabilité assez générale et le suivre devrait
+                                            aboutir à une expérience de développement générale fantastique sur Windows.
+                                        </p>
+
+                                        <h2 id="huit">4 Conclusion</h2>
+                                        <p class="lamda">Si vous êtes arrivé jusqu'ici, et surtout si vous avez terminé
+                                            la configuration d'un système d'exploitation natif dans la section 3 , vous
+                                            avez maintenant suffisamment appris sur l'environnement de développement
+                                            .Vous êtes prêt à passer à des tutoriels stimulants tels whiche tutorielde
+                                            CSS et de mise en page ,le tutorielde ruby et le tutoriel ruby .Bonne
+                                            chance!</p>
+                                        <button class="btn">Bonne chance 💪💪💪 </button>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+
         <a href="#home" id="home" class="scroll-up-btn">
-                <i class="fas fa-arrow-up"></i>
+            <i class="fas fa-arrow-up"></i>
         </a>
-   
+
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
-    <script src="/js/app.js"></script>
-</body>
+        <script src="/js/app.js"></script>
+    </body>
+
 </html>
